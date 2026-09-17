@@ -3,70 +3,70 @@
 <br><br>
 # AMIN SHAHSÂHEB
 ### BUSINESS × TECHNOLOGY × AI × MARKETS
-<sub>Building useful things where strategy, products, systems and machine intelligence meet.</sub>
-<br><br>
-<a href="https://biokart.ir/amin-shahsaheb"><img src="assets/profile-links.svg" alt="Business Card · GitHub · Instagram" width="100%"></a>
+<sub>Business builder · product thinker · systems designer · researcher</sub>
 </div>
 
 ---
 
+<table><tr><td width="60%">
+
 ## 01 / IDENTITY
 
-<table><tr><td width="58%">
+### I BUILD AT THE INTERSECTION.
 
-### THE PERSON BEHIND THE SYSTEM
+I work across **business, technology, markets, design and AI** — moving between strategy and execution, from the question of *what should exist* to the discipline of *making it real*.
 
-I work across **business, technology, markets, design and AI** — moving between the high-level question of *what should exist* and the low-level question of *how to make it exist*.
+I am drawn to work that can leave the screen and become a **product, business system, technical artifact, brand, analytical workflow or observable experiment**.
 
-I prefer work that can leave the screen and become something real: a product, a business system, a technical artifact, a brand, an analytical workflow, or an experiment with observable behavior.
+> **Understand the field → model the system → build the thing → observe reality → verify the claim.**
 
-> **Understand the field → design the system → build the thing → observe reality → verify the claim.**
-
-</td><td width="42%">
+</td><td width="40%">
 
 ```text
 FIELD
+  ↓
+CONTEXT
   ↓
 MODEL
   ↓
 ARCHITECTURE
   ↓
-EXECUTION
+BUILD
   ↓
-OBSERVATION
+OBSERVE
   ↓
 EVIDENCE
 ```
 
-**OPERATING PRINCIPLE**  
-Ideas are cheap. Systems with observable behavior are where the work begins.
+**WORKING BELIEF**  
+Ideas are the beginning. Observable systems are the work.
 
 </td></tr></table>
 
 ---
 
+<img src="assets/profile-system-map.svg" alt="A system model connecting Business, Technology, AI, Markets and Fānus" width="100%">
+
 ## 02 / THE WORKING FIELD
 
-<img src="assets/profile-system-map.svg" alt="Engineering model connecting Business, Technology, AI, Markets and Fānus" width="100%">
+The four disciplines below are not separate labels. They are the operating field around a deeper technical thread: **Fānus**.
 
-The four disciplines are not separate identities. They are the working field around a deeper technical thread: **Fānus**.
-
-| DOMAIN | FUNCTION | OUTPUT |
+| DOMAIN | I WORK ON | THE OUTPUT |
 |---|---|---|
-| **BUSINESS** | Strategy · Development · Marketing · Sales | Opportunities & ventures |
-| **TECHNOLOGY** | Software · Products · Systems | Working infrastructure |
+| **BUSINESS** | Strategy · Development · Marketing · Sales | Ventures · opportunities · growth systems |
+| **TECHNOLOGY** | Software · Products · Systems | Working digital infrastructure |
 | **AI** | Human–AI interaction · Continuity · Verification | New interaction models |
-| **MARKETS** | Research · Analysis · Systematic thinking | Decisions & signals |
+| **MARKETS** | Research · Analysis · Systematic thinking | Signals · models · decisions |
 
 ---
 
 ## 03 / FĀNUS
 
-### THE DEEPEST TECHNICAL THREAD
+### A SYSTEM, NOT A SINGLE PRODUCT.
 
-**Fānus** is the central research/engineering direction in my public work — an evolving system exploring **continuity, context, verification, relational AI and human agency**.
+**Fānus** is the deepest technical thread in my public work: an evolving research/engineering direction around **continuity, context, verification, relational AI and human agency**.
 
-The important part is not the name. It is the architecture behind it: different responsibilities stay visible instead of collapsing into one opaque product.
+Its architecture intentionally separates responsibilities. The core, the experience, the observation layer and the visual inspection layer do different jobs — and remain distinguishable.
 
 ```text
                          FĀNUS
@@ -82,7 +82,7 @@ The important part is not the name. It is the architecture behind it: different 
      converse            observe          visualize
 ```
 
-### THE FOUR SURFACES
+### FOUR SURFACES / ONE THREAD
 
 <table><tr><td width="50%">
 
@@ -92,7 +92,7 @@ Canonical protocol, research and engineering foundation.
 </td><td width="50%">
 
 **02 — FĀNUS APP**  
-Conversation, context and continuity experience.
+User-facing conversation, context and continuity.
 
 </td></tr><tr><td>
 
@@ -113,55 +113,68 @@ Visual engineering, architecture and system inspection.
 <a href="https://github.com/aminshahsaheb/fanus-blueprint"><b>BLUEPRINT</b></a>
 </div>
 
-<details><summary><b>WHY THE SEPARATION MATTERS</b></summary>
+<details><summary><b>ARCHITECTURAL RULES</b></summary>
 
-- **Canonical truth** is not the same thing as presentation.
-- **Experimentation** is not the same thing as a production claim.
-- **Interface** is not the same thing as infrastructure.
+- **Canonical truth** is not presentation.
+- **Experimentation** is not a production claim.
+- **Interface** is not infrastructure.
 - **Continuity** should not become captivity.
-- **Visual presence** should not be mistaken for backend proof.
-
-The architecture keeps those boundaries explicit. The result is a system that can be inspected instead of merely presented.
+- **Visual presence** is not backend proof.
+- **One truth, multiple surfaces.**
 
 </details>
 
 ---
 
-## 04 / OPERATING SYSTEM
+## 04 / HOW I OPERATE
 
-<img src="assets/profile-operating-system.svg" alt="Idea to verification operating model" width="100%">
+<img src="assets/profile-operating-system.svg" alt="Operating model from idea to verification" width="100%">
 
-I am interested in the point where an idea stops being a concept and becomes a **system with observable behavior**.
-
-**clarity · boundaries · evidence · iteration · usefulness · legibility**
+The interesting moment is where an idea stops being a concept and becomes a **system with observable behavior**.
 
 `BUILD → OBSERVE → VERIFY → REFINE → BUILD AGAIN`
 
+**Clarity · Boundaries · Evidence · Iteration · Usefulness · Legibility**
+
 ---
 
-## 05 / VISUAL LANGUAGE
+<img src="assets/profile-work-grid.svg" alt="Selected work system portfolio" width="100%">
+
+## 05 / SELECTED WORK
+
+The portfolio is organized as a system rather than a list: each surface has a distinct responsibility and a clear relationship to the others.
+
+- **Fānus / Living Seal** — canonical research and engineering direction.
+- **Fānus / App** — conversation, context and continuity experience.
+- **Fānus / Presence** — public presence, verification and runtime observation.
+- **Fānus / Blueprint** — visual engineering and architectural inspection.
+- **BioKart** — a practical business/product surface connecting identity, presentation and access.
+
+---
+
+## 06 / VISUAL LANGUAGE
 
 <img src="assets/profile-signal.svg" alt="Persian form, computational order and practical creation" width="100%">
 
 ### PERSIAN FORM × COMPUTATIONAL ORDER
 
-The visual system deliberately combines **Persian geometric language** — proportion, repetition, symmetry, arch structures and radial geometry — with **modern computation** — grids, nodes, signals, state, traces and inspectable relationships.
+The visual identity translates **Persian geometric intelligence** — proportion, symmetry, repetition, arch structures and radial geometry — into a contemporary technical language of **grids, nodes, state, signals, traces and relationships**.
 
-The goal is not historical imitation. It is translation.
+This is not historical imitation. It is a visual translation between two ways of organizing complexity.
 
-> **Old structural intelligence, expressed through a contemporary technical language.**
+> **OLD STRUCTURAL INTELLIGENCE / NEW TECHNICAL LANGUAGE**
 
-Every diagram, frame and mark is intended to behave like part of the same system — not decoration placed around the text.
+The same rule governs the README: diagrams are not decoration around the content. They are part of the information architecture.
 
 ---
 
-## 06 / WHAT I BUILD
+## 07 / WHAT I BUILD
 
 <table><tr><td width="25%" align="center">
 
 ### BUSINESS
-Development  
 Strategy  
+Development  
 Marketing  
 Sales
 
@@ -169,8 +182,8 @@ Sales
 
 ### TECHNOLOGY
 Software  
-Digital Products  
-Technical Systems  
+Products  
+Systems  
 Infrastructure
 
 </td><td width="25%" align="center">
@@ -191,16 +204,16 @@ Systematic Thinking
 
 </td></tr></table>
 
-**Also:** digital experiences · brand identity · practical software · research prototypes · analytical workflows · emerging products.
+**Also:** digital experiences · brand identity · research prototypes · analytical workflows · emerging products.
 
 ---
 
-## 07 / DESIGN RULES
+## 08 / DESIGN PRINCIPLES
 
 <table><tr><td width="50%">
 
 **HONESTY OVER PERFORMANCE**  
-An interface should not claim more than its system can support.
+The interface should never claim more than the system can support.
 
 **CONTINUITY WITHOUT CAPTIVITY**  
 Context should help without becoming control.
@@ -214,36 +227,10 @@ The human remains central to the interaction and its data.
 Preserve what matters instead of adding complexity for its own sake.
 
 **ONE TRUTH, MULTIPLE SURFACES**  
-Separate canonical state from the interfaces that expose it.
+Canonical state stays separate from the interfaces that expose it.
 
 **LEGIBILITY**  
 A system becomes more useful when its structure can be understood.
-
-</td></tr></table>
-
----
-
-## 08 / SELECTED WORK
-
-<table><tr><td width="50%">
-
-### FĀNUS / LIVING SEAL
-Canonical research and engineering direction around continuity, context, verification and human–AI systems.
-
-</td><td width="50%">
-
-### FĀNUS / APPLICATION
-A user-facing experience for conversation, context and continuity — deliberately separated from the canonical core.
-
-</td></tr><tr><td>
-
-### FĀNUS / PRESENCE
-A public presence and verification surface built around observable runtime state rather than simulated certainty.
-
-</td><td>
-
-### FĀNUS / BLUEPRINT
-A visual engineering surface for architecture, state, API, ledger, migration and system inspection.
 
 </td></tr></table>
 
@@ -258,10 +245,6 @@ A visual engineering surface for architecture, state, API, ledger, migration and
 <a href="https://github.com/aminshahsaheb"><b>GITHUB</b></a>
 &nbsp;&nbsp;·&nbsp;&nbsp;
 <a href="https://www.instagram.com/Amin_shahsaheb"><b>INSTAGRAM</b></a>
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<a href="https://wa.me/989198818465"><b>WHATSAPP</b></a>
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<a href="https://t.me/Kingsaheb"><b>TELEGRAM</b></a>
 
 <br><br>
 <sub>AMIN SHAHSÂHEB · BUILD · CONNECT · VERIFY</sub>
