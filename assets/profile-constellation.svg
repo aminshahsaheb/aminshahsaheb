@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 360" role="img" aria-labelledby="title desc">
+  <title id="title">Amin Shahsaheb — Working Field</title>
+  <desc id="desc">A systems map connecting business, markets, technology and AI through a central Fānus node.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#060908"/>
+      <stop offset=".5" stop-color="#0a120f"/>
+      <stop offset="1" stop-color="#060908"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#72efb6" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#72efb6" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#72efb6" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <rect width="1600" height="360" rx="26" fill="url(#bg)"/>
+  <g stroke="#b8efd4" stroke-opacity=".04">
+    <path d="M80 70H1520M80 180H1520M80 290H1520"/>
+    <path d="M180 38V322M490 38V322M800 38V322M1110 38V322M1420 38V322"/>
+  </g>
+  <text x="800" y="42" text-anchor="middle" fill="#6f8c80" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="4">THE WORKING FIELD / FIVE DOMAINS / ONE SYSTEM MINDSET</text>
+  <path d="M90 180H1510" stroke="url(#line)"/>
+
+  <!-- connections -->
+  <g fill="none" stroke="#83edb9" stroke-opacity=".18">
+    <path d="M180 180C390 180 510 180 800 180"/>
+    <path d="M490 180C600 180 680 180 800 180"/>
+    <path d="M800 180C920 180 1010 180 1110 180"/>
+    <path d="M800 180C1010 180 1180 180 1420 180"/>
+  </g>
+
+  <!-- nodes -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(180 180)">
+      <circle r="48" fill="#0a120f" stroke="#7ee2b0" stroke-opacity=".28"/>
+      <circle r="8" fill="#b9f6da"/>
+      <text y="-72" fill="#e3eee9" font-size="14" font-weight="700" letter-spacing="2.5">BUSINESS</text>
+      <text y="73" fill="#63796f" font-size="10" letter-spacing="1.7">BUILD / GROW</text>
+    </g>
+    <g transform="translate(490 180)">
+      <circle r="48" fill="#0a120f" stroke="#7ee2b0" stroke-opacity=".28"/>
+      <path d="M-19 12L-6-8L7 5L20-15" fill="none" stroke="#a7efca" stroke-width="2" stroke-opacity=".72"/>
+      <circle cx="-19" cy="12" r="3" fill="#b9f6da"/><circle cx="20" cy="-15" r="3" fill="#b9f6da"/>
+      <text y="-72" fill="#e3eee9" font-size="14" font-weight="700" letter-spacing="2.5">MARKETS</text>
+      <text y="73" fill="#63796f" font-size="10" letter-spacing="1.7">RESEARCH / ANALYSIS</text>
+    </g>
+    <g transform="translate(800 180)">
+      <circle r="66" fill="#0b1511" stroke="#9bf2c6" stroke-opacity=".45"/>
+      <circle r="44" fill="none" stroke="#a7efca" stroke-opacity=".22"/>
+      <circle r="9" fill="#d1ffe7"/>
+      <circle r="31" fill="#4fe5a6" opacity=".12" filter="url(#glow)"/>
+      <text y="-94" fill="#f1faf5" font-size="15" font-weight="750" letter-spacing="3">FĀNUS</text>
+      <text y="92" fill="#748c81" font-size="10" letter-spacing="1.7">CONTINUITY / VERIFICATION</text>
+    </g>
+    <g transform="translate(1110 180)">
+      <circle r="48" fill="#0a120f" stroke="#7ee2b0" stroke-opacity=".28"/>
+      <circle r="19" fill="none" stroke="#a7efca" stroke-opacity=".7"/><circle r="4" fill="#b9f6da"/>
+      <text y="-72" fill="#e3eee9" font-size="14" font-weight="700" letter-spacing="2.5">TECHNOLOGY</text>
+      <text y="73" fill="#63796f" font-size="10" letter-spacing="1.7">PRODUCT / SYSTEMS</text>
+    </g>
+    <g transform="translate(1420 180)">
+      <circle r="48" fill="#0a120f" stroke="#7ee2b0" stroke-opacity=".28"/>
+      <path d="M-20 14H20M-14 4H14M-7-6H7M-2-16H2" stroke="#a7efca" stroke-width="2" stroke-opacity=".7"/>
+      <text y="-72" fill="#e3eee9" font-size="14" font-weight="700" letter-spacing="2.5">AI</text>
+      <text y="73" fill="#63796f" font-size="10" letter-spacing="1.7">INTERACTION / FUTURE</text>
+    </g>
+  </g>
+  <path d="M90 320H1510" stroke="url(#line)" stroke-opacity=".65"/>
+  <text x="90" y="343" fill="#5e776c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="2">STRATEGY → PRODUCT → SYSTEM → OBSERVATION → VERIFICATION</text>
+  <text x="1510" y="343" text-anchor="end" fill="#5e776c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="2">NO DUPLICATED TRUTH</text>
+</svg>
