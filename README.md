@@ -1,9 +1,12 @@
 <div align="center">
 
-<img src="assets/hero.svg" alt="Amin Shahsaheb — Business • Technology • Markets" width="100%">
+<img src="assets/profile-hero.svg" alt="Amin Shahsaheb — Business × Technology × AI × Markets" width="100%">
 
-<p><strong>Business • Technology • Markets</strong></p>
-<p><em>Building businesses, digital products, brands, and practical systems at the edge of technology and AI.</em></p>
+### BUSINESS × TECHNOLOGY × AI × MARKETS
+
+<em>Turning ideas into products, systems, brands, and things that can exist in the real world.</em>
+
+<br><br>
 
 <a href="https://biokart.ir/amin-shahsaheb">Business Card</a> ·
 <a href="https://github.com/aminshahsaheb">GitHub</a> ·
@@ -13,79 +16,151 @@
 
 ---
 
-## ◆ About
+## ◈ WHO I AM
 
-I work across **business development, financial markets, technology, digital products, branding, and sales**.
+I work where **business, technology, markets, design, and AI** meet.
 
-My approach is practical: turn useful ideas into **products, brands, systems, and real-world projects**.
+I like taking a useful idea out of abstraction and pushing it toward something concrete — a product, a digital experience, a technical system, a brand, or a new way of working with machines.
 
-## ◈ Focus
+My work moves between **strategy and implementation**: understanding the larger system, then getting close enough to the details to build it.
 
-| Area | Focus |
-| --- | --- |
-| **Business** | Development, strategy, marketing & sales |
-| **Markets** | Research, analysis & systematic thinking |
-| **Technology** | Digital products, software & technical projects |
-| **Brand** | Visual identity, positioning & design |
-| **AI** | Human–AI systems, continuity, verification & emerging products |
-
-## ◇ Selected Work
-
-### Fānus — Living Seal
-
-A research and engineering project exploring **AI interaction reliability, memory, continuity, identity, governance, and human–AI systems**.
-
-Fānus has a **canonical research/engineering core** and separate experience surfaces. The deeper research system and externally presented product capabilities are intentionally kept distinct.
-
-**Explore:** [Fānus](https://fanus1.netlify.app/) · [Presence](https://fanus-presence.vercel.app/) · [Living Seal repository](https://github.com/aminshahsaheb/Fanus-Living-Seal)
-
-### Fānus App
-
-The user-facing conversational application for interacting with Fānus and its Living Seal continuity mechanism.
-
-**Repository:** [fanus-app](https://github.com/aminshahsaheb/fanus-app)
-
-### Fānus Presence
-
-The public presence, verification, runtime-observation, and experience layer around the Fānus system.
-
-**Repository:** [fanus-presence](https://github.com/aminshahsaheb/fanus-presence)
-
-### BioKart
-
-Work across **marketing, sales, business development, and digital presence**.
-
-**Explore:** [BioKart](https://biokart.ir/amin-shahsaheb)
+> **Create first. Make it real. Then make it understandable.**
 
 ---
 
-## ◈ FĀNUS ARCHITECTURE
+## ◆ THE WORK
 
-The Fānus repositories have distinct roles:
+<table>
+<tr>
+<td width="50%">
+
+**BUSINESS**  
+Development · Strategy · Marketing · Sales
+
+</td>
+<td width="50%">
+
+**TECHNOLOGY**  
+Software · Digital Products · Technical Systems
+
+</td>
+</tr>
+<tr>
+<td>
+
+**AI**  
+Human–AI Systems · Continuity · Verification
+
+</td>
+<td>
+
+**MARKETS**  
+Research · Analysis · Systematic Thinking
+
+</td>
+</tr>
+</table>
+
+---
+
+## ⟡ SELECTED SYSTEM — FĀNUS
+
+**Fānus** is the deepest technical/research direction in my public work: a system exploring how humans and AI can interact with more **continuity, context, verification, and honesty**.
+
+It is deliberately not presented as one monolithic application. The ecosystem separates different responsibilities so that the underlying source of truth, user experience, public presence, and visual inspection can evolve without silently becoming the same thing.
 
 ```text
                          FĀNUS
                            │
-              ┌────────────┴────────────┐
-              │                         │
-       CANONICAL CORE           EXPERIENCE SURFACES
-              │                         │
-   Fanus-Living-Seal          ┌─────────┴─────────┐
-              │                │                   │
-              │            fanus-app        fanus-presence
-              │                │                   │
-              └────────────────┴───────────────────┘
+                 ┌─────────┴─────────┐
+                 │                   │
+          LIVING SEAL           EXPERIENCE
+       canonical foundation       surfaces
+                 │                   │
+                 │        ┌──────────┼──────────┐
+                 │        │          │          │
+                 └────  APP      PRESENCE    BLUEPRINT
+                          │          │          │
+                     converse    verify     inspect
 ```
 
-**Fanus-Living-Seal** — canonical research and engineering foundation.
+### Living Seal
+Canonical research and engineering foundation — the place where the deeper system and its protocol live.
 
-**fanus-app** — direct user-facing conversation and Living Seal interaction.
+**[Open Fanus-Living-Seal →](https://github.com/aminshahsaheb/Fanus-Living-Seal)**
 
-**fanus-presence** — public presence, verification, runtime observation, and engineering-facing presentation.
+### Fānus App
+The human-facing conversational application: interaction, context, continuity, and Living Seal workflows.
 
-The surfaces may evolve independently, but they should not silently redefine the canonical core.
+**[Open fanus-app →](https://github.com/aminshahsaheb/fanus-app)**
 
-## ◇ Current Direction
+### Fānus Presence
+A public presence and verification surface designed to expose real runtime state rather than invent certainty.
+
+**[Open fanus-presence →](https://github.com/aminshahsaheb/fanus-presence)**
+
+### Fānus Blueprint
+A visual engineering surface: architecture, state, API, ledger, migration, ritual, and terminal — a window into the system, not a replacement for it.
+
+**[Open fanus-blueprint →](https://github.com/aminshahsaheb/fanus-blueprint)**
+
+---
+
+## ◇ HOW I THINK ABOUT SYSTEMS
+
+```text
+IDEA
+  ↓
+CONTEXT
+  ↓
+ARCHITECTURE
+  ↓
+BUILD
+  ↓
+OBSERVE
+  ↓
+VERIFY
+  ↓
+REFINE
+```
+
+I care about the boundary between **what a system actually does** and what an interface merely appears to say it does.
+
+That is why my projects tend to separate:
+
+- canonical truth from presentation
+- experimentation from production claims
+- interface from infrastructure
+- continuity from captivity
+- useful complexity from unnecessary complexity
+
+---
+
+## ✦ A VISUAL LANGUAGE OF MY OWN
+
+The visual direction of my work draws from two worlds without trying to turn either into decoration:
+
+**Persian architectural geometry** — proportion, repetition, symmetry, the arch, the star, the idea of a pattern continuing beyond a single frame.
+
+**Modern computation** — grids, signals, state, networks, interfaces, traces, and systems that can be inspected.
+
+The result is intentionally restrained: **old geometry translated into a modern technical language.**
+
+---
+
+## ⚙ WHAT I BUILD
+
+- Digital products and user-facing experiences
+- Human–AI interaction systems
+- Research and engineering prototypes
+- Business and growth systems
+- Brand identities and digital presence
+- Market research and analytical workflows
+- Practical software and technology projects
+
+---
+
+## ▣ CURRENT AXIS
 
 ```text
 BUSINESS
@@ -97,26 +172,22 @@ AI
 MARKETS
 ```
 
-For Fānus specifically, the direction is to keep the underlying research ambitious while making externally presented capabilities **clear, measurable, testable, and understandable**.
+The common thread is simple:
 
-## ⚙ What I Do
+**find something useful → understand the system around it → build it → test it → make it legible.**
 
-- Business development & consulting
-- Financial market analysis
-- Digital product development
-- Branding & visual identity
-- Marketing & sales
+For Fānus, that means keeping ambitious research connected to capabilities that can be **observed, tested, measured, and explained**.
 
-## ▣ Technology Background
+---
 
-Experience across **software, hardware, mobile technology, digital products, and online projects**.
-
-## ⟡ Connect
+## ⟐ CONNECT
 
 <a href="https://biokart.ir/amin-shahsaheb">Business Card</a> ·
 <a href="https://www.instagram.com/Amin_shahsaheb">Instagram</a> ·
 <a href="https://wa.me/989198818465">WhatsApp</a> ·
 <a href="https://t.me/Kingsaheb">Telegram</a> ·
 <a href="https://github.com/aminshahsaheb">GitHub</a>
+
+<br>
 
 <p align="center"><sub>Best Never Rest</sub></p>
