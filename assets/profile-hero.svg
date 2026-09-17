@@ -1,104 +1,174 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 720" role="img" aria-labelledby="title desc">
-  <title id="title">Amin Shahsaheb — Business, Technology, AI, Markets</title>
-  <desc id="desc">A dark editorial identity system combining Persian-inspired geometric architecture with computational grids, signals and a central systems mark.</desc>
+  <title id="title">Amin Shahsaheb — Build, Connect, Verify</title>
+  <desc id="desc">A premium dark identity system combining Persian geometric proportion with a precise systems architecture diagram, signal traces and layered engineering nodes.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#040605"/>
-      <stop offset="0.48" stop-color="#09120f"/>
+      <stop offset="0" stop-color="#030504"/>
+      <stop offset="0.5" stop-color="#08110d"/>
       <stop offset="1" stop-color="#020303"/>
     </linearGradient>
-    <radialGradient id="halo" cx="78%" cy="48%" r="44%">
-      <stop offset="0" stop-color="#55e7a9" stop-opacity=".18"/>
-      <stop offset=".52" stop-color="#55e7a9" stop-opacity=".045"/>
-      <stop offset="1" stop-color="#55e7a9" stop-opacity="0"/>
+    <radialGradient id="light" cx="79%" cy="45%" r="50%">
+      <stop offset="0" stop-color="#73f0b5" stop-opacity=".13"/>
+      <stop offset=".38" stop-color="#73f0b5" stop-opacity=".035"/>
+      <stop offset="1" stop-color="#73f0b5" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="rule" x1="0" x2="1">
-      <stop offset="0" stop-color="#75f0ba" stop-opacity="0"/>
-      <stop offset=".48" stop-color="#75f0ba" stop-opacity=".7"/>
-      <stop offset="1" stop-color="#75f0ba" stop-opacity="0"/>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#9af6c7" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#9af6c7" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#9af6c7" stop-opacity="0"/>
     </linearGradient>
-    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-      <path d="M50 0H0V50" fill="none" stroke="#b9f6da" stroke-opacity=".045"/>
+    <linearGradient id="trace" x1="0" x2="1">
+      <stop offset="0" stop-color="#83edb8" stop-opacity=".08"/>
+      <stop offset=".5" stop-color="#baffdc" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#83edb8" stop-opacity=".08"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#c7f8df" stroke-opacity=".038"/>
     </pattern>
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="13"/>
+    <pattern id="micro" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M12 0H0V12" fill="none" stroke="#d8ffea" stroke-opacity=".018"/>
+    </pattern>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="tinyGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3"/>
     </filter>
   </defs>
 
-  <rect width="1800" height="720" rx="28" fill="url(#bg)"/>
-  <rect width="1800" height="720" rx="28" fill="url(#halo)"/>
-  <rect width="1800" height="720" rx="28" fill="url(#grid)"/>
-  <rect x="22" y="22" width="1756" height="676" rx="20" fill="none" stroke="#b9f6da" stroke-opacity=".11"/>
+  <rect width="1800" height="720" rx="30" fill="url(#bg)"/>
+  <rect width="1800" height="720" rx="30" fill="url(#light)"/>
+  <rect width="1800" height="720" rx="30" fill="url(#grid)"/>
+  <rect x="26" y="26" width="1748" height="668" rx="22" fill="none" stroke="#d4ffe9" stroke-opacity=".105"/>
 
-  <!-- Editorial frame -->
-  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" letter-spacing="2.6" fill="#6f8c80">
-    <text x="92" y="76">AMIN / IDENTITY SYSTEM · 01</text>
-    <text x="1708" y="76" text-anchor="end">BUSINESS · TECHNOLOGY · AI · MARKETS</text>
+  <!-- Precision frame -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" letter-spacing="2.5">
+    <text x="86" y="72" fill="#6f897d">AMIN / PERSONAL SYSTEM · 02</text>
+    <text x="1714" y="72" text-anchor="end" fill="#6f897d">BUILD · CONNECT · VERIFY</text>
   </g>
-  <path d="M92 100H1708" stroke="url(#rule)"/>
+  <path d="M86 94H1714" stroke="url(#line)"/>
 
-  <!-- Identity -->
+  <!-- Left editorial identity block -->
   <g font-family="Inter,Segoe UI,Arial,sans-serif">
-    <text x="96" y="214" fill="#ecfff6" font-size="72" font-weight="750" letter-spacing="2">AMIN SHAHSÂHEB</text>
-    <text x="100" y="264" fill="#8ce9ba" font-size="18" font-weight="650" letter-spacing="6">BUILD · CONNECT · VERIFY</text>
-    <text x="100" y="334" fill="#d0ddd7" font-size="24">Business, products, systems and practical technology</text>
-    <text x="100" y="370" fill="#d0ddd7" font-size="24">at the edge of human work and machine intelligence.</text>
+    <text x="92" y="206" fill="#f0fff7" font-size="74" font-weight="760" letter-spacing="1.2">AMIN SHAHSÂHEB</text>
+    <text x="96" y="254" fill="#8cecbc" font-size="16" font-weight="650" letter-spacing="5.5">BUSINESS · TECHNOLOGY · AI · MARKETS</text>
+    <text x="96" y="315" fill="#d2dfd9" font-size="23">I move between strategy, product, systems and</text>
+    <text x="96" y="350" fill="#d2dfd9" font-size="23">the practical edge of human–machine work.</text>
   </g>
 
-  <!-- Small thesis -->
-  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
-    <text x="100" y="432" fill="#7f9a8e" font-size="13" letter-spacing="2">IDEA</text>
-    <text x="196" y="432" fill="#a8c8ba" font-size="13">→</text>
-    <text x="226" y="432" fill="#7f9a8e" font-size="13" letter-spacing="2">SYSTEM</text>
-    <text x="340" y="432" fill="#a8c8ba" font-size="13">→</text>
-    <text x="370" y="432" fill="#7f9a8e" font-size="13" letter-spacing="2">BUILD</text>
-    <text x="458" y="432" fill="#a8c8ba" font-size="13">→</text>
-    <text x="488" y="432" fill="#7f9a8e" font-size="13" letter-spacing="2">OBSERVE</text>
-    <text x="600" y="432" fill="#a8c8ba" font-size="13">→</text>
-    <text x="630" y="432" fill="#7f9a8e" font-size="13" letter-spacing="2">VERIFY</text>
+  <!-- Engineering method rail -->
+  <g transform="translate(96 414)" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+    <text x="0" y="0" fill="#657c71" font-size="10" letter-spacing="2.4">WORKING METHOD</text>
+    <path d="M0 26H650" stroke="#b7f7d5" stroke-opacity=".13"/>
+    <g fill="#b9f8d9">
+      <circle cx="6" cy="26" r="3"/><circle cx="168" cy="26" r="3"/><circle cx="330" cy="26" r="3"/><circle cx="492" cy="26" r="3"/><circle cx="650" cy="26" r="3"/>
+    </g>
+    <g font-size="11" letter-spacing="1.7" fill="#94aa9f">
+      <text x="0" y="55">01 IDEA</text>
+      <text x="151" y="55">02 SYSTEM</text>
+      <text x="314" y="55">03 BUILD</text>
+      <text x="474" y="55">04 OBSERVE</text>
+      <text x="635" y="55" text-anchor="end">05 VERIFY</text>
+    </g>
   </g>
 
-  <!-- Persian-inspired arch + computational seal -->
-  <g transform="translate(1360 350)">
-    <path d="M-270 265V-42C-270-205-150-285 0-285S270-205 270-42v307" fill="none" stroke="#7ff0ba" stroke-opacity=".09" stroke-width="2"/>
-    <path d="M-228 265V-34C-228-164-126-230 0-230S228-164 228-34v299" fill="none" stroke="#8af5c2" stroke-opacity=".18" stroke-width="2"/>
-    <path d="M-188 265V-26C-188-128-101-184 0-184S188-128 188-26v291" fill="none" stroke="#a0f7ce" stroke-opacity=".10"/>
+  <!-- Lower-left signature -->
+  <g transform="translate(96 536)" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+    <rect width="650" height="88" rx="12" fill="#07100c" fill-opacity=".66" stroke="#b7f7d5" stroke-opacity=".09"/>
+    <text x="20" y="26" fill="#657d72" font-size="9" letter-spacing="2.2">DESIGN LANGUAGE</text>
+    <text x="20" y="51" fill="#a9c4b7" font-size="12">PERSIAN PROPORTION  ×  COMPUTATIONAL GEOMETRY</text>
+    <text x="20" y="70" fill="#6f897d" font-size="10">ARCH · RADIAL STAR · GRID · NODE · SIGNAL · STATE</text>
+    <path d="M474 18L536 70M536 18L474 70" stroke="#9ef5c9" stroke-opacity=".16"/>
+    <circle cx="505" cy="44" r="17" fill="none" stroke="#aaf7d0" stroke-opacity=".22"/>
+    <circle cx="505" cy="44" r="4" fill="#caffdf"/>
+  </g>
 
-    <!-- Eight-point geometric star, constructed from simple radial lines -->
+  <!-- Right: architectural system model -->
+  <g transform="translate(1320 364)">
+    <!-- Persian arch proportions -->
+    <path d="M-360 300V-58C-360-246-218-318 0-318S360-246 360-58V300" fill="none" stroke="#a7f8cf" stroke-opacity=".055" stroke-width="2"/>
+    <path d="M-316 300V-50C-316-206-190-268 0-268S316-206 316-50V300" fill="none" stroke="#a7f8cf" stroke-opacity=".105" stroke-width="2"/>
+    <path d="M-270 300V-40C-270-171-156-226 0-226S270-171 270-40V300" fill="none" stroke="#a7f8cf" stroke-opacity=".08"/>
+
+    <!-- Engineering construction grid -->
+    <g stroke="#c8ffe1" stroke-opacity=".055">
+      <path d="M-300 0H300M-300 72H300M-300 144H300M-300 216H300"/>
+      <path d="M-240-40V260M-160-40V260M-80-40V260M0-40V260M80-40V260M160-40V260M240-40V260"/>
+    </g>
+
+    <!-- Eight-point star / geometric aperture -->
     <g transform="rotate(22.5)">
-      <path d="M0-150L34-48L106-106L48-34L150 0L48 34L106 106L34 48L0 150L-34 48L-106 106L-48 34L-150 0L-48-34L-106-106L-34-48Z" fill="none" stroke="#9bf8ce" stroke-opacity=".62" stroke-width="2.2"/>
-      <circle r="112" fill="none" stroke="#9bf8ce" stroke-opacity=".16"/>
-      <circle r="72" fill="none" stroke="#9bf8ce" stroke-opacity=".24"/>
-      <path d="M-112-112L112 112M112-112L-112 112" stroke="#9bf8ce" stroke-opacity=".08"/>
+      <path d="M0-154L34-50L109-109L50-34L154 0L50 34L109 109L34 50L0 154L-34 50L-109 109L-50 34L-154 0L-50-34L-109-109L-34-50Z" fill="#07130e" fill-opacity=".72" stroke="#a8f8cf" stroke-opacity=".52" stroke-width="2"/>
+      <path d="M0-108L24-35L76-76L35-24L108 0L35 24L76 76L24 35L0 108L-24 35L-76 76L-35 24L-108 0L-35-24L-76-76L-24-35Z" fill="none" stroke="#b9ffdc" stroke-opacity=".22"/>
+      <circle r="154" fill="none" stroke="#aaf7d0" stroke-opacity=".11"/>
+      <circle r="108" fill="none" stroke="#aaf7d0" stroke-opacity=".17"/>
+      <circle r="62" fill="none" stroke="#aaf7d0" stroke-opacity=".22"/>
     </g>
 
-    <!-- Central system node -->
-    <circle r="58" fill="#55e7a9" opacity=".10" filter="url(#glow)"/>
-    <circle r="22" fill="none" stroke="#b7ffdc" stroke-opacity=".42"/>
-    <circle r="7" fill="#d0ffe7"/>
-    <circle cx="-150" cy="0" r="4" fill="#b7ffdc"/>
-    <circle cx="150" cy="0" r="4" fill="#b7ffdc"/>
-    <circle cx="0" cy="-150" r="4" fill="#b7ffdc"/>
-    <circle cx="0" cy="150" r="4" fill="#b7ffdc"/>
+    <!-- System core -->
+    <circle r="70" fill="#6ef0b3" opacity=".08" filter="url(#softGlow)"/>
+    <circle r="42" fill="#06110c" stroke="#baffdc" stroke-opacity=".35"/>
+    <circle r="22" fill="none" stroke="#c8ffe2" stroke-opacity=".5"/>
+    <circle r="7" fill="#ddffeb"/>
+    <text y="3" text-anchor="middle" fill="#9feec2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" letter-spacing="2">FĀNUS</text>
 
-    <!-- Signal / market trace -->
-    <path d="M-335 205L-290 182L-246 196L-205 158L-163 174L-120 137L-74 151L-30 111L16 126L62 84L108 101L153 56L201 73L247 28L292 42L336 2" fill="none" stroke="#7ceeb8" stroke-opacity=".34" stroke-width="2"/>
-    <g fill="#b7ffdc">
-      <circle cx="-246" cy="196" r="2.8"/><circle cx="-163" cy="174" r="2.8"/><circle cx="-74" cy="151" r="2.8"/><circle cx="16" cy="126" r="2.8"/><circle cx="108" cy="101" r="2.8"/><circle cx="201" cy="73" r="2.8"/><circle cx="292" cy="42" r="2.8"/>
+    <!-- Layer nodes -->
+    <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" letter-spacing="1.6">
+      <g transform="translate(-286 -10)">
+        <rect width="126" height="42" rx="8" fill="#07110d" stroke="#b9f8d7" stroke-opacity=".17"/>
+        <circle cx="16" cy="21" r="4" fill="#bfffe0"/>
+        <text x="30" y="18" fill="#a8c4b7">STRATEGY</text><text x="30" y="30" fill="#61786d">DIRECTION</text>
+      </g>
+      <g transform="translate(160 -10)">
+        <rect width="126" height="42" rx="8" fill="#07110d" stroke="#b9f8d7" stroke-opacity=".17"/>
+        <circle cx="16" cy="21" r="4" fill="#bfffe0"/>
+        <text x="30" y="18" fill="#a8c4b7">PRODUCT</text><text x="30" y="30" fill="#61786d">EXPERIENCE</text>
+      </g>
+      <g transform="translate(-286 78)">
+        <rect width="126" height="42" rx="8" fill="#07110d" stroke="#b9f8d7" stroke-opacity=".17"/>
+        <circle cx="16" cy="21" r="4" fill="#bfffe0"/>
+        <text x="30" y="18" fill="#a8c4b7">SYSTEM</text><text x="30" y="30" fill="#61786d">ARCHITECTURE</text>
+      </g>
+      <g transform="translate(160 78)">
+        <rect width="126" height="42" rx="8" fill="#07110d" stroke="#b9f8d7" stroke-opacity=".17"/>
+        <circle cx="16" cy="21" r="4" fill="#bfffe0"/>
+        <text x="30" y="18" fill="#a8c4b7">OBSERVATION</text><text x="30" y="30" fill="#61786d">REALITY</text>
+      </g>
+    </g>
+
+    <!-- Connection graph -->
+    <g fill="none" stroke="#a9f8d0" stroke-opacity=".23" stroke-width="1.5">
+      <path d="M-160 11L-82 0"/><path d="M160 11L82 0"/>
+      <path d="M-160 99L-82 40"/><path d="M160 99L82 40"/>
+    </g>
+    <g fill="#bfffe0">
+      <circle cx="-160" cy="11" r="3"/><circle cx="160" cy="11" r="3"/><circle cx="-160" cy="99" r="3"/><circle cx="160" cy="99" r="3"/>
+    </g>
+
+    <!-- Radial cardinal points -->
+    <g fill="#baffdc">
+      <circle cx="0" cy="-154" r="3"/><circle cx="154" cy="0" r="3"/><circle cx="0" cy="154" r="3"/><circle cx="-154" cy="0" r="3"/>
+    </g>
+
+    <!-- Signal trace crossing the model -->
+    <path d="M-382 246L-340 229L-304 238L-268 211L-228 220L-190 189L-152 201L-114 166L-76 178L-38 143L0 153L38 122L76 132L114 96L152 109L190 74L228 86L268 49L304 60L340 24L382 36" fill="none" stroke="url(#trace)" stroke-width="2"/>
+    <g fill="#caffdf">
+      <circle cx="-304" cy="238" r="2.5"/><circle cx="-228" cy="220" r="2.5"/><circle cx="-152" cy="201" r="2.5"/><circle cx="-76" cy="178" r="2.5"/><circle cx="0" cy="153" r="2.5"/><circle cx="76" cy="132" r="2.5"/><circle cx="152" cy="109" r="2.5"/><circle cx="228" cy="86" r="2.5"/><circle cx="304" cy="60" r="2.5"/>
+    </g>
+
+    <!-- Micro annotations -->
+    <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="8" letter-spacing="1.4" fill="#637b70">
+      <text x="-348" y="-174">PROPORTION / 08</text>
+      <text x="238" y="-174">STATE / LIVE</text>
+      <text x="-350" y="282">INPUT → MODEL → OUTPUT</text>
+      <text x="350" y="282" text-anchor="end">OBSERVE / VERIFY</text>
     </g>
   </g>
 
-  <!-- Bottom system legend -->
-  <path d="M92 540H1708" stroke="url(#rule)"/>
-  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" letter-spacing="2.2">
-    <text x="100" y="580" fill="#91b4a4">BUSINESS / GROW</text>
-    <text x="410" y="580" fill="#91b4a4">TECHNOLOGY / BUILD</text>
-    <text x="780" y="580" fill="#91b4a4">AI / INTERACTION</text>
-    <text x="1110" y="580" fill="#91b4a4">MARKETS / ANALYSIS</text>
-    <text x="1450" y="580" fill="#91b4a4">FĀNUS / SYSTEM</text>
-  </g>
-  <g font-family="Inter,Segoe UI,Arial,sans-serif">
-    <text x="100" y="632" fill="#60786d" font-size="13" letter-spacing="2">PERSIAN GEOMETRY × MODERN COMPUTATION × PRACTICAL CREATION</text>
-    <text x="1700" y="632" text-anchor="end" fill="#60786d" font-size="13" letter-spacing="2">OLD FORM / NEW LANGUAGE</text>
+  <!-- Bottom rule -->
+  <path d="M86 662H1714" stroke="url(#line)"/>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="2">
+    <text x="90" y="682" fill="#60786d">PERSIAN FORM / COMPUTATIONAL ORDER / PRACTICAL CREATION</text>
+    <text x="1710" y="682" text-anchor="end" fill="#60786d">OLD FORM → NEW LANGUAGE</text>
   </g>
 </svg>
