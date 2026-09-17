@@ -2,33 +2,132 @@
 
 <img src="assets/profile-hero.svg" alt="Amin Shahsaheb — Business × Technology × AI × Markets" width="100%">
 
-### BUSINESS × TECHNOLOGY × AI × MARKETS
+# AMIN SHAHSÂHEB
 
-<em>Turning ideas into products, systems, brands, and things that can exist in the real world.</em>
+**Business × Technology × AI × Markets**  
+<sub>Building useful things where strategy, products, systems and machine intelligence meet.</sub>
 
-<br><br>
-
+<p>
 <a href="https://biokart.ir/amin-shahsaheb">Business Card</a> ·
 <a href="https://github.com/aminshahsaheb">GitHub</a> ·
 <a href="https://www.instagram.com/Amin_shahsaheb">Instagram</a>
+</p>
 
 </div>
 
 ---
 
-## ◈ WHO I AM
+<img src="assets/profile-constellation.svg" alt="The working field — Business, Markets, Fānus, Technology and AI" width="100%">
 
-I work where **business, technology, markets, design, and AI** meet.
+## ◈ THE PERSON BEHIND THE WORK
 
-I like taking a useful idea out of abstraction and pushing it toward something concrete — a product, a digital experience, a technical system, a brand, or a new way of working with machines.
+I work across **business, technology, markets, design and AI** — moving between the high-level question of *what should exist* and the low-level question of *how to make it exist*.
 
-My work moves between **strategy and implementation**: understanding the larger system, then getting close enough to the details to build it.
+My preference is practical:
 
-> **Create first. Make it real. Then make it understandable.**
+> **Understand the field → design the system → build the thing → observe reality → verify the claim.**
+
+That thread runs through products, business projects, analytical work, brand systems and my deeper experiments with human–AI interaction.
 
 ---
 
-## ◆ THE WORK
+## ⟡ FĀNUS — THE DEEPEST TECHNICAL THREAD
+
+**Fānus** is the central research/engineering direction in my public work: an evolving system exploring **continuity, context, verification, relational AI and human agency**.
+
+It is intentionally separated into distinct surfaces rather than treated as one monolith:
+
+```text
+                         FĀNUS
+                           │
+             ┌─────────────┴─────────────┐
+             │                           │
+      LIVING SEAL                   EXPERIENCE
+      canonical core                  surfaces
+             │               ┌───────────┼───────────┐
+             │               │           │           │
+             └──────────── APP        PRESENCE    BLUEPRINT
+                              │           │           │
+                          converse      verify      inspect
+```
+
+### The four surfaces
+
+| Surface | What it is |
+|---|---|
+| **Living Seal** | Canonical protocol, research and engineering foundation |
+| **Fānus App** | Human-facing conversation, context and continuity experience |
+| **Fānus Presence** | Public presence, verification and runtime observation |
+| **Fānus Blueprint** | Visual engineering, architecture and system inspection |
+
+<p align="center">
+<a href="https://github.com/aminshahsaheb/Fanus-Living-Seal">LIVING SEAL →</a> ·
+<a href="https://github.com/aminshahsaheb/fanus-app">APP →</a> ·
+<a href="https://github.com/aminshahsaheb/fanus-presence">PRESENCE →</a> ·
+<a href="https://github.com/aminshahsaheb/fanus-blueprint">BLUEPRINT →</a>
+</p>
+
+<details>
+<summary><strong>WHY THE SEPARATION MATTERS</strong></summary>
+
+The architecture keeps different responsibilities visible:
+
+- **canonical truth** is not the same thing as presentation
+- **experimentation** is not the same thing as a production claim
+- **interface** is not the same thing as infrastructure
+- **continuity** should not become captivity
+- **visual presence** should not be mistaken for backend proof
+
+The Fānus repositories repeatedly return to the same discipline: make the boundary between what is real, what is experimental, and what is merely represented as clear as possible.
+
+</details>
+
+---
+
+## ◆ HOW I THINK ABOUT BUILDING
+
+```text
+        IDEA
+          ↓
+       CONTEXT
+          ↓
+     ARCHITECTURE
+          ↓
+        BUILD
+          ↓
+       OBSERVE
+          ↓
+       VERIFY
+          ↓
+       REFINE
+```
+
+I am interested in the point where an idea stops being a concept and becomes a **system with observable behavior**.
+
+That means I care about:
+
+**clarity · boundaries · evidence · iteration · usefulness · legibility**
+
+---
+
+## ✦ A VISUAL LANGUAGE OF MY OWN
+
+The profile is deliberately built from two design vocabularies.
+
+**Persian geometric language** — proportion, repetition, symmetry, the arch, radial stars and patterns that continue beyond the edge of a single frame.
+
+**Modern computation** — grids, signals, nodes, state, traces, interfaces and inspectable systems.
+
+The intention is not historical imitation. It is translation:
+
+> **Persian geometry × modern computation.**  
+> Old structural ideas, expressed through a contemporary technical language.
+
+The geometric vocabulary is grounded in a real design tradition in which circles, squares, polygons and star constructions were combined, repeated and interlaced into highly structured patterns. citeturn0search0turn0search25
+
+---
+
+## ⚙ WHAT I BUILD / WORK ON
 
 <table>
 <tr>
@@ -49,7 +148,7 @@ Software · Digital Products · Technical Systems
 <td>
 
 **AI**  
-Human–AI Systems · Continuity · Verification
+Human–AI Interaction · Continuity · Verification
 
 </td>
 <td>
@@ -61,102 +160,21 @@ Research · Analysis · Systematic Thinking
 </tr>
 </table>
 
----
+<br>
 
-## ⟡ SELECTED SYSTEM — FĀNUS
-
-**Fānus** is the deepest technical/research direction in my public work: a system exploring how humans and AI can interact with more **continuity, context, verification, and honesty**.
-
-It is deliberately not presented as one monolithic application. The ecosystem separates different responsibilities so that the underlying source of truth, user experience, public presence, and visual inspection can evolve without silently becoming the same thing.
-
-```text
-                         FĀNUS
-                           │
-                 ┌─────────┴─────────┐
-                 │                   │
-          LIVING SEAL           EXPERIENCE
-       canonical foundation       surfaces
-                 │                   │
-                 │        ┌──────────┼──────────┐
-                 │        │          │          │
-                 └────  APP      PRESENCE    BLUEPRINT
-                          │          │          │
-                     converse    verify     inspect
-```
-
-### Living Seal
-Canonical research and engineering foundation — the place where the deeper system and its protocol live.
-
-**[Open Fanus-Living-Seal →](https://github.com/aminshahsaheb/Fanus-Living-Seal)**
-
-### Fānus App
-The human-facing conversational application: interaction, context, continuity, and Living Seal workflows.
-
-**[Open fanus-app →](https://github.com/aminshahsaheb/fanus-app)**
-
-### Fānus Presence
-A public presence and verification surface designed to expose real runtime state rather than invent certainty.
-
-**[Open fanus-presence →](https://github.com/aminshahsaheb/fanus-presence)**
-
-### Fānus Blueprint
-A visual engineering surface: architecture, state, API, ledger, migration, ritual, and terminal — a window into the system, not a replacement for it.
-
-**[Open fanus-blueprint →](https://github.com/aminshahsaheb/fanus-blueprint)**
+**Also:** digital experiences · brand identity · practical software · research prototypes · analytical workflows · emerging products.
 
 ---
 
-## ◇ HOW I THINK ABOUT SYSTEMS
+## ◇ THE PRINCIPLES I KEEP RETURNING TO
 
-```text
-IDEA
-  ↓
-CONTEXT
-  ↓
-ARCHITECTURE
-  ↓
-BUILD
-  ↓
-OBSERVE
-  ↓
-VERIFY
-  ↓
-REFINE
-```
-
-I care about the boundary between **what a system actually does** and what an interface merely appears to say it does.
-
-That is why my projects tend to separate:
-
-- canonical truth from presentation
-- experimentation from production claims
-- interface from infrastructure
-- continuity from captivity
-- useful complexity from unnecessary complexity
-
----
-
-## ✦ A VISUAL LANGUAGE OF MY OWN
-
-The visual direction of my work draws from two worlds without trying to turn either into decoration:
-
-**Persian architectural geometry** — proportion, repetition, symmetry, the arch, the star, the idea of a pattern continuing beyond a single frame.
-
-**Modern computation** — grids, signals, state, networks, interfaces, traces, and systems that can be inspected.
-
-The result is intentionally restrained: **old geometry translated into a modern technical language.**
-
----
-
-## ⚙ WHAT I BUILD
-
-- Digital products and user-facing experiences
-- Human–AI interaction systems
-- Research and engineering prototypes
-- Business and growth systems
-- Brand identities and digital presence
-- Market research and analytical workflows
-- Practical software and technology projects
+| Principle | Meaning in the work |
+|---|---|
+| **Honesty over performance** | Don't make an interface claim more than the system can support. |
+| **Continuity without captivity** | Context should help without becoming control. |
+| **Human agency** | The human remains central to the interaction and its data. |
+| **Context over noise** | Preserve what matters instead of adding complexity for its own sake. |
+| **One truth, multiple surfaces** | Separate canonical state from the interfaces that expose it. |
 
 ---
 
@@ -164,30 +182,32 @@ The result is intentionally restrained: **old geometry translated into a modern 
 
 ```text
 BUSINESS
-   ×
+    ×
 TECHNOLOGY
-   ×
+    ×
 AI
-   ×
+    ×
 MARKETS
 ```
 
 The common thread is simple:
 
-**find something useful → understand the system around it → build it → test it → make it legible.**
-
-For Fānus, that means keeping ambitious research connected to capabilities that can be **observed, tested, measured, and explained**.
+**find something useful → understand the system around it → build → test → make it legible.**
 
 ---
 
 ## ⟐ CONNECT
 
-<a href="https://biokart.ir/amin-shahsaheb">Business Card</a> ·
-<a href="https://www.instagram.com/Amin_shahsaheb">Instagram</a> ·
-<a href="https://wa.me/989198818465">WhatsApp</a> ·
-<a href="https://t.me/Kingsaheb">Telegram</a> ·
-<a href="https://github.com/aminshahsaheb">GitHub</a>
+<div align="center">
 
-<br>
+<a href="https://biokart.ir/amin-shahsaheb">BUSINESS CARD</a> ·
+<a href="https://www.instagram.com/Amin_shahsaheb">INSTAGRAM</a> ·
+<a href="https://wa.me/989198818465">WHATSAPP</a> ·
+<a href="https://t.me/Kingsaheb">TELEGRAM</a> ·
+<a href="https://github.com/aminshahsaheb">GITHUB</a>
 
-<p align="center"><sub>Best Never Rest</sub></p>
+<br><br>
+
+<sub>Best Never Rest</sub>
+
+</div>
