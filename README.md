@@ -123,8 +123,6 @@ The intention is not historical imitation. It is translation:
 > **Persian geometry × modern computation.**  
 > Old structural ideas, expressed through a contemporary technical language.
 
-The geometric vocabulary is grounded in a real design tradition in which circles, squares, polygons and star constructions were combined, repeated and interlaced into highly structured patterns. citeturn0search0turn0search25
-
 ---
 
 ## ⚙ WHAT I BUILD / WORK ON
