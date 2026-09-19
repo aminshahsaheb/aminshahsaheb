@@ -163,9 +163,27 @@ and a claim that can be checked.**
 
 ---
 
-## Direct access
+## Connect
 
-[GitHub](https://github.com/aminshahsaheb) · [Instagram](https://www.instagram.com/Amin_shahsaheb) · [Business Card](https://biokart.ir/amin-shahsaheb)
+<p align="center">
+  <a href="https://www.instagram.com/Amin_shahsaheb">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+  <a href="https://wa.me/989198818465">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
+  </a>
+  <a href="https://t.me/Kingsaheb">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
+  </a>
+  <a href="https://biokart.ir/amin-shahsaheb">
+    <img src="https://img.shields.io/badge/Business%20Card-2D2A26?style=for-the-badge&logo=linktree&logoColor=white" alt="Business Card">
+  </a>
+  <a href="https://github.com/aminshahsaheb">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+</p>
+
+<p align="center"><sub>Instagram · Direct contact · Telegram · Business card · GitHub</sub></p>
 
 <div align="center">
 <sub>STRATEGY → PRODUCT → SYSTEM → OBSERVATION → VERIFICATION</sub>
