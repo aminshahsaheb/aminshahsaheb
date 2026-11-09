@@ -7,10 +7,14 @@ from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
-FRAMES = 16
-DURATION_MS = 150
 
-# Keep the source SVGs. The GIFs are derived presentation files.
+# 40 frames at 90 ms gives a calm 3.6-second loop.
+# All motion curves return to their starting state without a visible jump.
+FRAMES = 40
+DURATION_MS = 90
+RENDER_SCALE = 2
+GIF_COLORS = 128
+
 SOURCES = {
     "profile-hero.svg": ("profile-hero.gif", "hero"),
     "profile-system-map.svg": ("profile-system-map.gif", "map"),
@@ -25,6 +29,31 @@ BRASS = (215, 189, 135)
 BLUE = (151, 184, 211)
 COPPER = (190, 132, 111)
 PROJECT_ACCENTS = (JADE, BRASS, BLUE)
+CONTACT_ACCENTS = ((225, 123, 176), (91, 190, 133), (104, 174, 225), BRASS)
+PROCESS_ACCENTS = (JADE, BRASS, BLUE, JADE, COPPER)
+
+
+def clamp(value: float, low: float = 0.0, high: float = 1.0) -> float:
+    return max(low, min(high, value))
+
+
+def smootherstep(value: float) -> float:
+    value = clamp(value)
+    return value * value * value * (value * (value * 6 - 15) + 10)
+
+
+def ping_pong(phase: float) -> float:
+    """Smooth travel from 0 to 1 and back to 0, with no endpoint jump."""
+    cycle = phase * 2
+    raw = cycle if cycle <= 1 else 2 - cycle
+    return smootherstep(raw)
+
+
+def cyclic_focus(phase: float, count: int, index: int) -> float:
+    """Soft focus that blends between neighbours instead of switching abruptly."""
+    position = (phase % 1.0) * count
+    distance = abs(((position - index + count / 2) % count) - count / 2)
+    return 1.0 - smootherstep(distance / 1.05)
 
 
 def render_source(svg_path: Path) -> Image.Image:
@@ -33,16 +62,26 @@ def render_source(svg_path: Path) -> Image.Image:
 
 
 def pulse_ring(draw, x, y, radius, alpha, color=JADE, width=2):
-    rgba = (*color, max(0, min(255, int(alpha))))
-    draw.ellipse((x-radius, y-radius, x+radius, y+radius), outline=rgba, width=width)
+    alpha = int(clamp(alpha, 0, 255))
+    if alpha <= 0:
+        return
+    draw.ellipse(
+        (x - radius, y - radius, x + radius, y + radius),
+        outline=(*color, alpha),
+        width=max(1, width),
+    )
 
 
-def add_sweep(layer: Image.Image, x: float, y0: int, y1: int, strength: int = 30, color=JADE):
+def add_sweep(layer: Image.Image, x: float, y0: int, y1: int,
+              strength: int = 30, color=JADE, half_width: int | None = None):
     width, _ = layer.size
     band = Image.new("RGBA", layer.size, (0, 0, 0, 0))
-    d = ImageDraw.Draw(band)
-    half = max(14, width // 55)
-    d.rectangle((int(x-half), y0, int(x+half), y1), fill=(*color, strength))
+    draw = ImageDraw.Draw(band)
+    half = half_width or max(14, width // 55)
+    draw.rectangle(
+        (int(x - half), y0, int(x + half), y1),
+        fill=(*color, max(0, min(255, int(strength)))),
+    )
     band = band.filter(ImageFilter.GaussianBlur(radius=max(8, width // 90)))
     layer.alpha_composite(band)
 
@@ -50,86 +89,129 @@ def add_sweep(layer: Image.Image, x: float, y0: int, y1: int, strength: int = 30
 def overlay_for(kind: str, size, frame: int) -> Image.Image:
     width, height = size
     phase = frame / FRAMES
-    overlay = Image.new("RGBA", size, (0, 0, 0, 0))
+    scale = RENDER_SCALE
+    sw, sh = width * scale, height * scale
+    overlay = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
     draw = ImageDraw.Draw(overlay)
 
-    if kind == "hero":
-        x = width * (0.48 + 0.43 * phase)
-        add_sweep(overlay, x, int(height * .12), int(height * .91), 25, BRASS)
-        cx, cy = int(width * .733), int(height * .505)
-        pulse = 8 + 5 * (0.5 + 0.5 * math.sin(phase * math.tau))
-        pulse_ring(draw, cx, cy, pulse, 90, JADE, 2)
-        pulse_ring(draw, cx, cy, pulse + 12, 34, BRASS, 1)
+    def point(nx: float, ny: float) -> tuple[int, int]:
+        return int(sw * nx), int(sh * ny)
 
-    elif kind == "map":
-        # These coordinates match the three project emblems in the source SVG.
-        nodes = [(0.269, .461), (.584, .461), (.899, .461)]
-        active = int((phase * 3) % 3)
+    def ring(nx: float, ny: float, radius: float, alpha: float,
+             color=JADE, line=2):
+        x, y = point(nx, ny)
+        pulse_ring(draw, x, y, int(radius * scale), alpha, color,
+                   max(1, int(line * scale)))
+
+    if kind == "hero":
+        # The sweep fades at both ends, so the loop closes cleanly.
+        travel = smootherstep(phase)
+        x = sw * (0.20 + 0.60 * travel)
+        envelope = math.sin(math.pi * phase) ** 1.4
+        add_sweep(
+            overlay, x, int(sh * 0.12), int(sh * 0.91),
+            22 * envelope, BRASS, half_width=max(12, sw // 85),
+        )
+        pulse = 10 + 3.2 * (0.5 + 0.5 * math.sin(math.tau * phase))
+        ring(0.733, 0.505, pulse, 62 + 22 * math.sin(math.tau * phase), JADE, 2)
+        ring(0.733, 0.505, pulse + 13, 22 + 10 * math.sin(math.tau * phase), BRASS, 1)
+
+    elif kind in ("map", "work"):
+        # Each project emblem receives a soft focus. Neighbouring states blend.
+        if kind == "map":
+            nodes = [(0.269, 0.461), (0.584, 0.461), (0.899, 0.461)]
+            y_ratio = 0.461
+        else:
+            nodes = [(0.279, 0.481), (0.593, 0.481), (0.908, 0.481)]
+            y_ratio = 0.481
+
         for index, (nx, ny) in enumerate(nodes):
-            x, y = int(width * nx), int(height * ny)
-            if index == active:
-                color = PROJECT_ACCENTS[index]
-                radius = 9 + int(5 * (0.5 + 0.5 * math.sin(phase * math.tau * 3)))
-                pulse_ring(draw, x, y, radius, 125, color, 2)
-                pulse_ring(draw, x, y, radius + 9, 42, color, 1)
+            focus = cyclic_focus(phase, len(nodes), index)
+            if focus < 0.025:
+                continue
+            color = PROJECT_ACCENTS[index]
+            pulse = 0.5 + 0.5 * math.sin(math.tau * phase * 2 + index * 0.7)
+            radius = (8 if kind == "map" else 7) + (3.5 if kind == "map" else 3) * pulse
+            ring(nx, ny, radius, 82 * focus, color, 2)
+            ring(nx, ny, radius + 8, 28 * focus, color, 1)
 
     elif kind == "process":
-        nodes = [.119, .306, .494, .681, .869]
-        active = int((phase * 5) % 5)
-        process_accents = (JADE, BRASS, BLUE, JADE, COPPER)
-        for index, nx in enumerate(nodes):
-            x, y = int(width * nx), int(height * .45)
-            if index == active:
-                radius = 20 + int(5 * (0.5 + 0.5 * math.sin(phase * math.tau * 5)))
-                pulse_ring(draw, x, y, radius, 125, process_accents[index], 2)
-        x = int(width * (.119 + .75 * phase))
-        y = int(height * .45)
-        draw.ellipse((x-3, y-3, x+3, y+3), fill=(*BRASS, 205))
+        nodes = [0.119, 0.306, 0.494, 0.681, 0.869]
+        travel = ping_pong(phase)
+        x_ratio = nodes[0] + (nodes[-1] - nodes[0]) * travel
+        y_ratio = 0.45
 
-    elif kind == "work":
-        # Pulse the actual project emblems, not the text or empty card space.
-        nodes = [(0.279, .481), (.593, .481), (.908, .481)]
-        active = int((phase * 3) % 3)
-        for index, (nx, ny) in enumerate(nodes):
-            if index == active:
-                x, y = int(width * nx), int(height * ny)
-                color = PROJECT_ACCENTS[index]
-                radius = 9 + int(4 * (0.5 + 0.5 * math.sin(phase * math.tau * 3)))
-                pulse_ring(draw, x, y, radius, 120, color, 2)
-                pulse_ring(draw, x, y, radius + 8, 38, color, 1)
+        for index, nx in enumerate(nodes):
+            distance = abs(x_ratio - nx)
+            focus = 1.0 - smootherstep(distance / 0.15)
+            if focus > 0.02:
+                ring(nx, y_ratio, 20 + 3 * focus, 78 * focus,
+                     PROCESS_ACCENTS[index], 2)
+
+        x, y = point(x_ratio, y_ratio)
+        r = 3.0 * scale
+        draw.ellipse((x-r, y-r, x+r, y+r), fill=(*BRASS, 220))
 
     elif kind == "connect":
-        # A quiet focus travels across the four contact cards.
-        centers = [.149, .391, .632, .862]
-        active = int((phase * 4) % 4)
-        accents = ((225, 123, 176), (91, 190, 133), (104, 174, 225), BRASS)
+        centers = [0.149, 0.391, 0.632, 0.862]
         for index, nx in enumerate(centers):
-            if index == active:
-                x, y = int(width * nx), int(height * .61)
-                radius = 13 + int(4 * (0.5 + 0.5 * math.sin(phase * math.tau * 4)))
-                pulse_ring(draw, x, y, radius, 110, accents[index], 2)
-                pulse_ring(draw, x, y, radius + 9, 35, accents[index], 1)
+            focus = cyclic_focus(phase, len(centers), index)
+            if focus < 0.025:
+                continue
+            pulse = 0.5 + 0.5 * math.sin(math.tau * phase * 2 + index * 0.55)
+            radius = 12 + 3 * pulse
+            ring(nx, 0.61, radius, 72 * focus, CONTACT_ACCENTS[index], 2)
+            ring(nx, 0.61, radius + 9, 22 * focus, CONTACT_ACCENTS[index], 1)
 
     elif kind == "signal":
-        x = int(width * (.42 + .45 * phase))
-        y = int(height * (.66 - .28 * phase + .025 * math.sin(phase * math.tau)))
-        pulse_ring(draw, x, y, 7 + int(3 * math.sin(phase * math.tau) ** 2), 140, BLUE, 2)
-        draw.ellipse((x-3, y-3, x+3, y+3), fill=(*BRASS, 220))
-        add_sweep(overlay, int(width * (.35 + .55 * phase)), int(height * .28), int(height * .78), 18, BLUE)
+        # A measured scan moves forward and back over the existing signal trace.
+        travel = ping_pong(phase)
+        x_ratio = 0.40 + 0.48 * travel
+        y_ratio = 0.66 - 0.28 * travel + 0.018 * math.sin(math.tau * phase)
+        x, y = point(x_ratio, y_ratio)
+        pulse = 7 + 2 * (0.5 + 0.5 * math.sin(math.tau * phase))
+        pulse_ring(draw, x, y, int(pulse * scale), 105, BLUE, 2 * scale)
+        r = 2.7 * scale
+        draw.ellipse((x-r, y-r, x+r, y+r), fill=(*BRASS, 220))
 
-    return overlay
+        sweep_x = sw * (0.34 + 0.58 * travel)
+        sweep_strength = 14 + 5 * (0.5 + 0.5 * math.sin(math.tau * phase))
+        add_sweep(
+            overlay, sweep_x, int(sh * 0.28), int(sh * 0.78),
+            sweep_strength, BLUE, half_width=max(10, sw // 100),
+        )
+
+    # Supersampling keeps the thin rings and glows clean at the final 800px width.
+    return overlay.resize((width, height), Image.Resampling.LANCZOS)
+
+
+def build_shared_palette(frames: list[Image.Image]) -> Image.Image:
+    """Build one palette for the whole animation to prevent frame-to-frame color flicker."""
+    sample_width = 128
+    sample_height = max(1, round(frames[0].height * sample_width / frames[0].width))
+    sheet = Image.new("RGB", (sample_width * len(frames), sample_height))
+    for index, frame in enumerate(frames):
+        thumb = frame.resize((sample_width, sample_height), Image.Resampling.BOX)
+        sheet.paste(thumb, (index * sample_width, 0))
+    return sheet.quantize(colors=GIF_COLORS, method=Image.Quantize.MEDIANCUT)
 
 
 def make_gif(source_name: str, output_name: str, kind: str):
     source = ASSETS / source_name
     output = ASSETS / output_name
     base = render_source(source)
-    frames = []
+    rgb_frames = []
 
     for index in range(FRAMES):
         frame = base.convert("RGBA")
         frame.alpha_composite(overlay_for(kind, frame.size, index))
-        frames.append(frame.convert("P", palette=Image.Palette.ADAPTIVE, colors=64))
+        rgb_frames.append(frame.convert("RGB"))
+
+    palette = build_shared_palette(rgb_frames)
+    frames = [
+        frame.quantize(palette=palette, dither=Image.Dither.NONE)
+        for frame in rgb_frames
+    ]
 
     frames[0].save(
         output,
@@ -140,7 +222,11 @@ def make_gif(source_name: str, output_name: str, kind: str):
         optimize=True,
         disposal=2,
     )
-    print(f"Created {output.relative_to(ROOT)} ({output.stat().st_size:,} bytes)")
+    print(
+        f"Created {output.relative_to(ROOT)} "
+        f"({output.stat().st_size:,} bytes, {FRAMES} frames, "
+        f"{FRAMES * DURATION_MS / 1000:.1f}s loop)"
+    )
 
 
 if __name__ == "__main__":
