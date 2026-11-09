@@ -13,7 +13,7 @@ ASSETS = ROOT / "assets"
 FRAMES = 30
 DURATION_MS = 100
 RENDER_SCALE = 2
-GIF_COLORS = 128
+GIF_COLORS = 80
 MAX_GIF_BYTES = 400_000
 MAX_TOTAL_BYTES = 1_200_000
 PHASE_OFFSETS = {
@@ -197,7 +197,7 @@ def overlay_for(kind: str, size, frame: int) -> Image.Image:
 
 def build_shared_palette(frames: list[Image.Image]) -> Image.Image:
     """Build one palette for the whole animation to prevent frame-to-frame color flicker."""
-    sample_width = 192
+    sample_width = 128
     sample_height = max(1, round(frames[0].height * sample_width / frames[0].width))
     sheet = Image.new("RGB", (sample_width * len(frames), sample_height))
     for index, frame in enumerate(frames):
