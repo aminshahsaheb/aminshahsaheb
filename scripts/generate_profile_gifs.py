@@ -8,12 +8,12 @@ from PIL import Image, ImageDraw, ImageFilter
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
 
-# 40 frames at 90 ms gives a calm 3.6-second loop.
+# 30 frames at 100 ms gives a calm 3-second loop.
 # All motion curves return to their starting state without a visible jump.
-FRAMES = 40
-DURATION_MS = 90
+FRAMES = 30
+DURATION_MS = 100
 RENDER_SCALE = 2
-GIF_COLORS = 128
+GIF_COLORS = 80
 
 SOURCES = {
     "profile-hero.svg": ("profile-hero.gif", "hero"),
@@ -220,7 +220,7 @@ def make_gif(source_name: str, output_name: str, kind: str):
         duration=DURATION_MS,
         loop=0,
         optimize=True,
-        disposal=2,
+        disposal=1,
     )
     print(
         f"Created {output.relative_to(ROOT)} "
