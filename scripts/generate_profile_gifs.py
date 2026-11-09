@@ -34,7 +34,7 @@ SOURCES = {
     "profile-connect.svg": ("profile-connect.gif", "connect"),
 }
 
-JADE = (151, 211, 176)
+JADE = (151, 247, 194)
 BRASS = (215, 189, 135)
 BLUE = (151, 184, 211)
 COPPER = (190, 132, 111)
@@ -195,17 +195,6 @@ def overlay_for(kind: str, size, frame: int) -> Image.Image:
     return overlay.resize((width, height), Image.Resampling.LANCZOS)
 
 
-def build_shared_palette(frames: list[Image.Image]) -> Image.Image:
-    """Build one palette for the whole animation to prevent frame-to-frame color flicker."""
-    sample_width = 192
-    sample_height = max(1, round(frames[0].height * sample_width / frames[0].width))
-    sheet = Image.new("RGB", (sample_width * len(frames), sample_height))
-    for index, frame in enumerate(frames):
-        thumb = frame.resize((sample_width, sample_height), Image.Resampling.BOX)
-        sheet.paste(thumb, (index * sample_width, 0))
-    return sheet.quantize(colors=GIF_COLORS, method=Image.Quantize.MEDIANCUT)
-
-
 def make_gif(source_name: str, output_name: str, kind: str):
     source = ASSETS / source_name
     output = ASSETS / output_name
@@ -217,9 +206,14 @@ def make_gif(source_name: str, output_name: str, kind: str):
         frame.alpha_composite(overlay_for(kind, frame.size, index))
         rgb_frames.append(frame.convert("RGB"))
 
-    palette = build_shared_palette(rgb_frames)
+    # Quantize each full-resolution frame independently. The old shared palette
+    # sampled 192px thumbnails and discarded fine, saturated colors from the artwork.
     frames = [
-        frame.quantize(palette=palette, dither=Image.Dither.NONE)
+        frame.quantize(
+            colors=GIF_COLORS,
+            method=Image.Quantize.MEDIANCUT,
+            dither=Image.Dither.NONE,
+        )
         for frame in rgb_frames
     ]
 
