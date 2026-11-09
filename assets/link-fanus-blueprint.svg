@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 76" role="img" aria-labelledby="t"><title id="t">Fānus Blueprint — VISUAL SYSTEM ARCHITECTURE</title>
-<rect x="1" y="1" width="428" height="74" rx="12" fill="#101713" stroke="#73d6a0" stroke-opacity=".6"/>
-<circle cx="34" cy="38" r="13" fill="none" stroke="#73d6a0" stroke-width="1.5"/><path d="M27 38H41M34 31V45" stroke="#73d6a0" stroke-width="1.5"/>
+<rect x="1" y="1" width="428" height="74" rx="12" fill="#101713" stroke="#8dc8a8" stroke-opacity=".6"/>
+<circle cx="34" cy="38" r="13" fill="none" stroke="#8dc8a8" stroke-width="1.5"/><path d="M27 38H41M34 31V45" stroke="#8dc8a8" stroke-width="1.5"/>
 <text x="62" y="34" fill="#f0f0e8" font-family="Arial,sans-serif" font-size="16" font-weight="700">Fānus Blueprint</text>
-<text x="62" y="55" fill="#b9c9bf" font-family="Arial,sans-serif" font-size="11">VISUAL SYSTEM ARCHITECTURE</text>
-<text x="405" y="45" text-anchor="end" fill="#73d6a0" font-family="Arial,sans-serif" font-size="15">↗</text></svg>
+<text x="62" y="55" fill="#9eaaa2" font-family="Arial,sans-serif" font-size="11">VISUAL SYSTEM ARCHITECTURE</text>
+<text x="405" y="45" text-anchor="end" fill="#8dc8a8" font-family="Arial,sans-serif" font-size="15">↗</text></svg>
