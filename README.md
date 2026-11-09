@@ -103,9 +103,16 @@ The goal is not decoration. The visual system should make the underlying relatio
 
 ## Connect
 
+A clear route for each kind of conversation. Choose the channel that fits your message.
+
+<img src="assets/profile-connect.gif" alt="Four contact cards for Instagram, WhatsApp, Telegram and the business profile. Each card uses its own brand-inspired color." width="100%">
+
 <div align="center">
 
-[Instagram](https://www.instagram.com/Amin_shahsaheb) · [WhatsApp](https://wa.me/989198818465) · [Telegram](https://t.me/Kingsaheb) · [Business profile](https://biokart.ir/amin-shahsaheb)
+| Social | Direct message | Professional |
+|:--|:--|:--|
+| [Instagram · @Amin_shahsaheb](https://www.instagram.com/Amin_shahsaheb) | [WhatsApp · +98 919 881 8465](https://wa.me/989198818465) | [Business profile · BioKart](https://biokart.ir/amin-shahsaheb) |
+| [Telegram · @Kingsaheb](https://t.me/Kingsaheb) |  |  |
 
 **Best Never Rest**
 

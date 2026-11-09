@@ -17,6 +17,7 @@ SOURCES = {
     "profile-operating-system.svg": ("profile-operating-system.gif", "process"),
     "profile-work-grid.svg": ("profile-work-grid.gif", "work"),
     "profile-signal.svg": ("profile-signal.gif", "signal"),
+    "profile-connect.svg": ("profile-connect.gif", "connect"),
 }
 
 JADE = (151, 211, 176)
@@ -96,6 +97,18 @@ def overlay_for(kind: str, size, frame: int) -> Image.Image:
                 radius = 9 + int(4 * (0.5 + 0.5 * math.sin(phase * math.tau * 3)))
                 pulse_ring(draw, x, y, radius, 120, color, 2)
                 pulse_ring(draw, x, y, radius + 8, 38, color, 1)
+
+    elif kind == "connect":
+        # A quiet focus travels across the four contact cards.
+        centers = [.13, .37, .61, .85]
+        active = int((phase * 4) % 4)
+        accents = ((225, 123, 176), (91, 190, 133), (104, 174, 225), BRASS)
+        for index, nx in enumerate(centers):
+            if index == active:
+                x, y = int(width * nx), int(height * .53)
+                radius = 13 + int(4 * (0.5 + 0.5 * math.sin(phase * math.tau * 4)))
+                pulse_ring(draw, x, y, radius, 110, accents[index], 2)
+                pulse_ring(draw, x, y, radius + 9, 35, accents[index], 1)
 
     elif kind == "signal":
         x = int(width * (.42 + .45 * phase))
