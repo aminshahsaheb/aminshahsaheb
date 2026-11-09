@@ -8,17 +8,17 @@
  <linearGradient id="wa" x2="1" y2="1"><stop stop-color="#1d6045"/><stop offset="1" stop-color="#123c2d"/></linearGradient>
  <linearGradient id="tg" x2="1" y2="1"><stop stop-color="#1e5878"/><stop offset="1" stop-color="#122e46"/></linearGradient>
  <linearGradient id="biz" x2="1" y2="1"><stop stop-color="#3a3427"/><stop offset="1" stop-color="#211f19"/></linearGradient>
- <linearGradient id="rule" x2="1"><stop stop-color="#efcb7b" stop-opacity="0"/><stop offset=".5" stop-color="#efcb7b" stop-opacity=".7"/><stop offset="1" stop-color="#efcb7b" stop-opacity="0"/></linearGradient>
+ <linearGradient id="rule" x2="1"><stop stop-color="#d7bd87" stop-opacity="0"/><stop offset=".5" stop-color="#d7bd87" stop-opacity=".7"/><stop offset="1" stop-color="#d7bd87" stop-opacity="0"/></linearGradient>
 </defs>
 <rect width="1600" height="610" rx="24" fill="url(#bg)"/>
 <rect width="1600" height="610" rx="24" fill="url(#grid)"/>
 <rect x="24" y="24" width="1552" height="562" rx="16" fill="none" stroke="#d8e5dc" stroke-opacity=".14"/>
-<g font-family="ui-monospace,Menlo,monospace" font-size="11" letter-spacing="2.7" fill="#b4c4b8">
+<g font-family="ui-monospace,Menlo,monospace" font-size="11" letter-spacing="2.7" fill="#8d9b91">
  <text x="64" y="72">CONTACT / OPEN CHANNELS</text>
  <text x="1536" y="72" text-anchor="end">DIRECT · SIMPLE · HUMAN</text>
 </g>
 <text x="64" y="132" fill="#f1f0e9" font-family="Georgia,Times New Roman,serif" font-size="39">Start a conversation.</text>
-<text x="64" y="166" fill="#d0ddd4" font-family="Arial,Helvetica,sans-serif" font-size="17">Choose the channel that works best for you.</text>
+<text x="64" y="166" fill="#aebbb2" font-family="Arial,Helvetica,sans-serif" font-size="17">Choose the channel that works best for you.</text>
 <path d="M64 194H1536" stroke="url(#rule)"/>
 <!-- Instagram -->
 <g transform="translate(64 226)">
@@ -44,7 +44,7 @@
  <text x="26" y="132" fill="#e9f3ec" font-family="Georgia,Times New Roman,serif" font-size="30">WhatsApp</text>
  <text x="26" y="164" fill="#9ad2b2" font-family="ui-monospace,Menlo,monospace" font-size="14">+98 919 881 8465</text>
  <path d="M26 192H324" stroke="#58a982" stroke-opacity=".25"/>
- <text x="26" y="224" fill="#b8d2c1" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="1.8">DIRECT / PERSONAL MESSAGE</text>
+ <text x="26" y="224" fill="#8fa99a" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="1.8">DIRECT / PERSONAL MESSAGE</text>
  <text x="26" y="264" fill="#a8e0bf" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">MESSAGE ON WHATSAPP ↗</text>
 </g>
 <!-- Telegram -->
@@ -63,17 +63,17 @@
 <!-- Business -->
 <g transform="translate(1222 226)">
  <rect width="314" height="292" rx="14" fill="#1a1812" stroke="#b99e6a" stroke-opacity=".55"/>
- <path d="M14 0H300" stroke="#efcb7b" stroke-width="4"/>
+ <path d="M14 0H300" stroke="#d7bd87" stroke-width="4"/>
  <rect x="26" y="26" width="68" height="68" rx="20" fill="url(#biz)" stroke="#b99e6a" stroke-opacity=".5"/>
  <path d="M60 37L78 55L60 83L42 55Z" fill="none" stroke="#e3c995" stroke-width="2"/>
  <path d="M60 47L70 57L60 73L50 57Z" fill="none" stroke="#e3c995" stroke-opacity=".65"/>
  <circle cx="60" cy="60" r="4" fill="#e3c995"/>
  <text x="26" y="132" fill="#f1ecdf" font-family="Georgia,Times New Roman,serif" font-size="27">Digital Card</text>
- <text x="26" y="164" fill="#efcb7b" font-family="ui-monospace,Menlo,monospace" font-size="13">Amin Shahsaheb</text>
+ <text x="26" y="164" fill="#d7bd87" font-family="ui-monospace,Menlo,monospace" font-size="13">Amin Shahsaheb</text>
  <path d="M26 192H288" stroke="#b99e6a" stroke-opacity=".25"/>
  <text x="26" y="224" fill="#aaa18d" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="1.4">IDENTITY / WORK / CONTACT</text>
  <text x="26" y="264" fill="#e4c995" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">OPEN DIGITAL CARD ↗</text>
 </g>
-<text x="64" y="557" fill="#a9bdb0" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2">INSTAGRAM · WHATSAPP · TELEGRAM · BUSINESS PROFILE</text>
-<text x="1536" y="557" fill="#efcb7b" font-family="ui-monospace,Menlo,monospace" font-size="10" text-anchor="end" letter-spacing="2">BEST NEVER REST</text>
+<text x="64" y="557" fill="#819087" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2">INSTAGRAM · WHATSAPP · TELEGRAM · BUSINESS PROFILE</text>
+<text x="1536" y="557" fill="#d7bd87" font-family="ui-monospace,Menlo,monospace" font-size="10" text-anchor="end" letter-spacing="2">BEST NEVER REST</text>
 </svg>
