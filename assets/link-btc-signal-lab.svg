@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="t d">
 <title id="t">BTC Signal Lab — Market research</title><desc id="d">A clickable BTC Signal Lab profile card. EXPLORE PROJECT.</desc>
 <defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#111d28"/><stop offset="1" stop-color="#0b100e"/></linearGradient></defs>
-<rect x="2" y="2" width="756" height="206" rx="18" fill="url(#g)" stroke="#83a9c8" stroke-opacity=".65" stroke-width="2"/>
+<rect x="2" y="2" width="756" height="206" rx="18" fill="url(#g)" stroke="#79bde8" stroke-opacity=".65" stroke-width="2"/>
 <path d="M20 3H740" stroke="#b5d1e6" stroke-width="4" stroke-linecap="round"/>
-<rect x="28" y="34" width="66" height="66" rx="18" fill="#4d718e" fill-opacity=".28" stroke="#83a9c8" stroke-opacity=".7"/>
+<rect x="28" y="34" width="66" height="66" rx="18" fill="#4d718e" fill-opacity=".28" stroke="#79bde8" stroke-opacity=".7"/>
 <circle cx="61" cy="67" r="19" fill="none" stroke="#b5d1e6" stroke-width="2"/>
 <path d="M49 67H73M61 55V79" stroke="#b5d1e6" stroke-width="2" stroke-linecap="round" opacity=".7"/>
 <text x="122" y="63" fill="#f3f1e9" font-family="Georgia,serif" font-size="31">BTC Signal Lab</text>
 <text x="123" y="96" fill="#b5d1e6" font-family="Arial,sans-serif" font-size="18">Market research</text>
-<path d="M122 122H716" stroke="#83a9c8" stroke-opacity=".25"/>
-<text x="122" y="157" fill="#a8b5ad" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.5">HYPOTHESES · RISK · REPRODUCIBILITY</text>
+<path d="M122 122H716" stroke="#79bde8" stroke-opacity=".25"/>
+<text x="122" y="157" fill="#c4d2c9" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.5">HYPOTHESES · RISK · REPRODUCIBILITY</text>
 <text x="716" y="177" text-anchor="end" fill="#b5d1e6" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing=".6">EXPLORE PROJECT  ↗</text>
 <text x="716" y="47" text-anchor="end" fill="#b5d1e6" opacity=".65" font-family="monospace" font-size="12" letter-spacing="2">03</text>
 </svg>

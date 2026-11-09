@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 68" role="img" aria-labelledby="t"><title id="t">ABOUT section</title>
 <rect x="1" y="1" width="258" height="66" rx="12" fill="#111914" stroke="#526b5d" stroke-opacity=".8"/>
 <path d="M14 1H246" stroke="#bda575" stroke-width="2"/>
-<text x="20" y="42" fill="#d7bd87" font-family="monospace" font-size="12">01</text>
+<text x="20" y="42" fill="#efcb7b" font-family="monospace" font-size="12">01</text>
 <text x="52" y="42" fill="#e8eee9" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.1">ABOUT</text>
-<path d="M224 34H240M234 28L240 34L234 40" stroke="#8dc8a8" fill="none" stroke-width="1.5"/>
+<path d="M224 34H240M234 28L240 34L234 40" stroke="#73d6a0" fill="none" stroke-width="1.5"/>
 </svg>

@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="t d">
 <title id="t">MarketFa — Business software</title><desc id="d">A clickable MarketFa profile card. EXPLORE PROJECT.</desc>
 <defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#1d1b13"/><stop offset="1" stop-color="#0b100e"/></linearGradient></defs>
-<rect x="2" y="2" width="756" height="206" rx="18" fill="url(#g)" stroke="#c6a96e" stroke-opacity=".65" stroke-width="2"/>
+<rect x="2" y="2" width="756" height="206" rx="18" fill="url(#g)" stroke="#e0b96f" stroke-opacity=".65" stroke-width="2"/>
 <path d="M20 3H740" stroke="#e5ce9b" stroke-width="4" stroke-linecap="round"/>
-<rect x="28" y="34" width="66" height="66" rx="18" fill="#79683e" fill-opacity=".28" stroke="#c6a96e" stroke-opacity=".7"/>
+<rect x="28" y="34" width="66" height="66" rx="18" fill="#79683e" fill-opacity=".28" stroke="#e0b96f" stroke-opacity=".7"/>
 <circle cx="61" cy="67" r="19" fill="none" stroke="#e5ce9b" stroke-width="2"/>
 <path d="M49 67H73M61 55V79" stroke="#e5ce9b" stroke-width="2" stroke-linecap="round" opacity=".7"/>
 <text x="122" y="63" fill="#f3f1e9" font-family="Georgia,serif" font-size="31">MarketFa</text>
 <text x="123" y="96" fill="#e5ce9b" font-family="Arial,sans-serif" font-size="18">Business software</text>
-<path d="M122 122H716" stroke="#c6a96e" stroke-opacity=".25"/>
-<text x="122" y="157" fill="#a8b5ad" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.5">OPERATIONS · WORKSPACES · ARCHITECTURE</text>
+<path d="M122 122H716" stroke="#e0b96f" stroke-opacity=".25"/>
+<text x="122" y="157" fill="#c4d2c9" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.5">OPERATIONS · WORKSPACES · ARCHITECTURE</text>
 <text x="716" y="177" text-anchor="end" fill="#e5ce9b" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing=".6">EXPLORE PROJECT  ↗</text>
 <text x="716" y="47" text-anchor="end" fill="#e5ce9b" opacity=".65" font-family="monospace" font-size="12" letter-spacing="2">02</text>
 </svg>
