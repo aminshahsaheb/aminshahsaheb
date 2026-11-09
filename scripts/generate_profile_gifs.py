@@ -100,12 +100,12 @@ def overlay_for(kind: str, size, frame: int) -> Image.Image:
 
     elif kind == "connect":
         # A quiet focus travels across the four contact cards.
-        centers = [.13, .37, .61, .85]
+        centers = [.149, .391, .632, .862]
         active = int((phase * 4) % 4)
         accents = ((225, 123, 176), (91, 190, 133), (104, 174, 225), BRASS)
         for index, nx in enumerate(centers):
             if index == active:
-                x, y = int(width * nx), int(height * .53)
+                x, y = int(width * nx), int(height * .61)
                 radius = 13 + int(4 * (0.5 + 0.5 * math.sin(phase * math.tau * 4)))
                 pulse_ring(draw, x, y, radius, 110, accents[index], 2)
                 pulse_ring(draw, x, y, radius + 9, 35, accents[index], 1)

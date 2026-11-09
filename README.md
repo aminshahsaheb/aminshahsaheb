@@ -109,10 +109,9 @@ A clear route for each kind of conversation. Choose the channel that fits your m
 
 <div align="center">
 
-| Social | Direct message | Professional |
-|:--|:--|:--|
-| [Instagram · @Amin_shahsaheb](https://www.instagram.com/Amin_shahsaheb) | [WhatsApp · +98 919 881 8465](https://wa.me/989198818465) | [Business profile · BioKart](https://biokart.ir/amin-shahsaheb) |
-| [Telegram · @Kingsaheb](https://t.me/Kingsaheb) |  |  |
+[Instagram · @Amin_shahsaheb](https://www.instagram.com/Amin_shahsaheb) · [WhatsApp · +98 919 881 8465](https://wa.me/989198818465)
+
+[Telegram · @Kingsaheb](https://t.me/Kingsaheb) · [Business profile · BioKart](https://biokart.ir/amin-shahsaheb)
 
 **Best Never Rest**
 
