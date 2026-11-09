@@ -2,11 +2,11 @@
 
 <img src="assets/profile-hero.gif" alt="Architectural identity artwork: Build with intent. Verify with care." width="100%">
 
-# Amin Shahsaheb
+<h1 align="center">Amin Shahsaheb</h1>
 
-**Business systems · Digital products · Applied AI · Market research**
+<p align="center"><strong>Business systems · Digital products · Applied AI · Market research</strong></p>
 
-[Business profile](https://biokart.ir/amin-shahsaheb) · [Selected repositories](https://github.com/aminshahsaheb?tab=repositories) · [Contact](#connect)
+<p align="center"><a href="https://biokart.ir/amin-shahsaheb">Business profile</a> · <a href="https://github.com/aminshahsaheb?tab=repositories">Selected repositories</a> · <a href="#connect">Contact</a></p>
 
 </div>
 
