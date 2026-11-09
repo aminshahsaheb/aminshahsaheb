@@ -3,57 +3,57 @@
 <defs>
  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0a0e0c"/><stop offset="1" stop-color="#111a15"/></linearGradient>
  <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#d8e5dc" stroke-opacity=".035"/></pattern>
- <linearGradient id="rule" x2="1"><stop stop-color="#d7bd87" stop-opacity="0"/><stop offset=".5" stop-color="#d7bd87" stop-opacity=".65"/><stop offset="1" stop-color="#d7bd87" stop-opacity="0"/></linearGradient>
+ <linearGradient id="rule" x2="1"><stop stop-color="#efcb7b" stop-opacity="0"/><stop offset=".5" stop-color="#efcb7b" stop-opacity=".65"/><stop offset="1" stop-color="#efcb7b" stop-opacity="0"/></linearGradient>
 </defs>
-<rect width="1600" height="590" rx="24" fill="url(#bg)"/><rect width="1600" height="590" rx="24" fill="url(#g)"/><rect x="24" y="24" width="1552" height="542" rx="16" fill="none" stroke="#d8e5dc" stroke-opacity=".13"/>
-<g font-family="ui-monospace,Menlo,monospace" font-size="11" letter-spacing="2.6" fill="#8d9b91"><text x="64" y="70">THE WORKING FIELD / 03 DOMAINS</text><text x="1536" y="70" text-anchor="end">DISTINCT PROBLEMS · DISTINCT SYSTEMS</text></g>
+<rect width="1600" height="590" rx="24" fill="url(#bg)"/><rect width="1600" height="590" rx="24" fill="url(#g)"/><rect x="24" y="24" width="1552" height="542" rx="16" fill="none" stroke="#d8e5dc" stroke-opacity=".19"/>
+<g font-family="ui-monospace,Menlo,monospace" font-size="11" letter-spacing="2.6" fill="#b4c4b8"><text x="64" y="70">THE WORKING FIELD / 03 DOMAINS</text><text x="1536" y="70" text-anchor="end">DISTINCT PROBLEMS · DISTINCT SYSTEMS</text></g>
 <text x="64" y="126" fill="#f0efe8" font-family="Georgia,Times New Roman,serif" font-size="36">Different questions. One standard of care.</text>
 <path d="M64 148H1536" stroke="url(#rule)"/>
 <g transform="translate(64 178)">
- <rect width="464" height="292" rx="12" fill="#101b16" stroke="#8dc8a8" stroke-opacity=".4"/>
- <path d="M0 0H464" stroke="#8dc8a8" stroke-width="3"/>
- <g transform="translate(366 94)" fill="none" stroke="#a9d7bb">
-  <circle r="57" stroke-opacity=".25"/><circle r="42" stroke-opacity=".55"/><path d="M0-56L40-16L56 0L16 40L0 56L-40 16L-56 0L-16-40Z" stroke-opacity=".8"/><circle r="8" fill="#d7bd87" stroke="none"/>
-  <path d="M-78 0H78M0-78V78" stroke-opacity=".2"/>
+ <rect width="464" height="292" rx="12" fill="#101b16" stroke="#73d6a0" stroke-opacity=".4"/>
+ <path d="M0 0H464" stroke="#73d6a0" stroke-width="3"/>
+ <g transform="translate(366 94)" fill="none" stroke="#b5ebc9">
+  <circle r="57" stroke-opacity=".25"/><circle r="42" stroke-opacity=".55"/><path d="M0-56L40-16L56 0L16 40L0 56L-40 16L-56 0L-16-40Z" stroke-opacity=".8"/><circle r="8" fill="#efcb7b" stroke="none"/>
+  <path d="M-78 0H78M0-78V78" stroke-opacity=".26"/>
  </g>
- <text x="28" y="52" fill="#a9d7bb" font-family="ui-monospace,Menlo,monospace" font-size="11" letter-spacing="2">01 / HUMAN–AI SYSTEMS</text>
+ <text x="28" y="52" fill="#b5ebc9" font-family="ui-monospace,Menlo,monospace" font-size="11" letter-spacing="2">01 / HUMAN–AI SYSTEMS</text>
  <text x="28" y="112" fill="#f1f0e9" font-family="Georgia,Times New Roman,serif" font-size="36">FĀNUS</text>
- <text x="28" y="153" fill="#c1d0c6" font-family="Arial,Helvetica,sans-serif" font-size="15">Context · Continuity · Verification</text>
- <path d="M28 190H436" stroke="#a9d7bb" stroke-opacity=".18"/>
- <text x="28" y="225" fill="#d7bd87" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="1.7">TRUTH WITHOUT CAPTIVITY</text>
- <text x="28" y="254" fill="#82948a" font-family="Arial,Helvetica,sans-serif" font-size="13">Preserve useful context. Keep human agency.</text>
+ <text x="28" y="153" fill="#d6e6dc" font-family="Arial,Helvetica,sans-serif" font-size="15">Context · Continuity · Verification</text>
+ <path d="M28 190H436" stroke="#b5ebc9" stroke-opacity=".24"/>
+ <text x="28" y="225" fill="#efcb7b" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="1.7">TRUTH WITHOUT CAPTIVITY</text>
+ <text x="28" y="254" fill="#a9c0b1" font-family="Arial,Helvetica,sans-serif" font-size="13">Preserve useful context. Keep human agency.</text>
 </g>
 <g transform="translate(568 178)">
- <rect width="464" height="292" rx="12" fill="#171811" stroke="#c6a96e" stroke-opacity=".42"/>
- <path d="M0 0H464" stroke="#c6a96e" stroke-width="3"/>
- <g transform="translate(366 94)" fill="none" stroke="#d7bd87">
+ <rect width="464" height="292" rx="12" fill="#171811" stroke="#e0b96f" stroke-opacity=".42"/>
+ <path d="M0 0H464" stroke="#e0b96f" stroke-width="3"/>
+ <g transform="translate(366 94)" fill="none" stroke="#efcb7b">
   <rect x="-54" y="-54" width="108" height="108" rx="6" stroke-opacity=".3"/><path d="M-36-54V54M0-54V54M36-54V54M-54-36H54M-54 0H54M-54 36H54" stroke-opacity=".32"/>
   <rect x="-20" y="-20" width="40" height="40" stroke-opacity=".85"/><path d="M-20 0H20M0-20V20" stroke-opacity=".8"/><circle r="4" fill="#f0d7a0" stroke="none"/>
  </g>
- <text x="28" y="52" fill="#d7bd87" font-family="ui-monospace,Menlo,monospace" font-size="11" letter-spacing="2">02 / BUSINESS SOFTWARE</text>
+ <text x="28" y="52" fill="#efcb7b" font-family="ui-monospace,Menlo,monospace" font-size="11" letter-spacing="2">02 / BUSINESS SOFTWARE</text>
  <text x="28" y="112" fill="#f1f0e9" font-family="Georgia,Times New Roman,serif" font-size="36">MARKETFA</text>
  <text x="28" y="153" fill="#d1cdbb" font-family="Arial,Helvetica,sans-serif" font-size="15">Operations · Workspaces · Architecture</text>
- <path d="M28 190H436" stroke="#d7bd87" stroke-opacity=".18"/>
+ <path d="M28 190H436" stroke="#efcb7b" stroke-opacity=".24"/>
  <text x="28" y="225" fill="#e0c58f" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="1.7">ONE CORE · MANY INDUSTRIES</text>
- <text x="28" y="254" fill="#969282" font-family="Arial,Helvetica,sans-serif" font-size="13">Shape tools around the work people do.</text>
+ <text x="28" y="254" fill="#bbb69f" font-family="Arial,Helvetica,sans-serif" font-size="13">Shape tools around the work people do.</text>
 </g>
 <g transform="translate(1072 178)">
- <rect width="464" height="292" rx="12" fill="#111820" stroke="#83a9c8" stroke-opacity=".42"/>
- <path d="M0 0H464" stroke="#83a9c8" stroke-width="3"/>
- <g transform="translate(366 94)" fill="none" stroke="#a7c9e2">
-  <path d="M-62 50H62M-62 18H62M-62-14H62M-62-46H62" stroke-opacity=".2"/>
+ <rect width="464" height="292" rx="12" fill="#111820" stroke="#79bde8" stroke-opacity=".42"/>
+ <path d="M0 0H464" stroke="#79bde8" stroke-width="3"/>
+ <g transform="translate(366 94)" fill="none" stroke="#b4dcf6">
+  <path d="M-62 50H62M-62 18H62M-62-14H62M-62-46H62" stroke-opacity=".26"/>
   <path d="M-62 50L-38 28L-14 34L10-6L34 8L62-40" stroke-width="2.4" stroke-linejoin="round"/>
-  <g fill="#d7bd87" stroke="none"><circle cx="-38" cy="28" r="4"/><circle cx="10" cy="-6" r="4"/><circle cx="62" cy="-40" r="4"/></g>
+  <g fill="#efcb7b" stroke="none"><circle cx="-38" cy="28" r="4"/><circle cx="10" cy="-6" r="4"/><circle cx="62" cy="-40" r="4"/></g>
   <path d="M-62-54V58" stroke-opacity=".25"/>
  </g>
- <text x="28" y="52" fill="#a7c9e2" font-family="ui-monospace,Menlo,monospace" font-size="11" letter-spacing="2">03 / MARKET RESEARCH</text>
+ <text x="28" y="52" fill="#b4dcf6" font-family="ui-monospace,Menlo,monospace" font-size="11" letter-spacing="2">03 / MARKET RESEARCH</text>
  <text x="28" y="112" fill="#f1f0e9" font-family="Georgia,Times New Roman,serif" font-size="34">BTC SIGNAL LAB</text>
- <text x="28" y="153" fill="#c0ced9" font-family="Arial,Helvetica,sans-serif" font-size="15">Hypotheses · Risk · Reproducibility</text>
- <path d="M28 190H436" stroke="#a7c9e2" stroke-opacity=".18"/>
- <text x="28" y="225" fill="#a7c9e2" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="1.7">EVIDENCE BEFORE EDGE</text>
- <text x="28" y="254" fill="#91a1ad" font-family="Arial,Helvetica,sans-serif" font-size="13">A result is not proof of an advantage.</text>
+ <text x="28" y="153" fill="#d7e5ef" font-family="Arial,Helvetica,sans-serif" font-size="15">Hypotheses · Risk · Reproducibility</text>
+ <path d="M28 190H436" stroke="#b4dcf6" stroke-opacity=".24"/>
+ <text x="28" y="225" fill="#b4dcf6" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="1.7">EVIDENCE BEFORE EDGE</text>
+ <text x="28" y="254" fill="#b4c8d6" font-family="Arial,Helvetica,sans-serif" font-size="13">A result is not proof of an advantage.</text>
 </g>
-<text x="64" y="520" fill="#8d9b91" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2">SHARED METHOD</text>
+<text x="64" y="520" fill="#b4c4b8" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2">SHARED METHOD</text>
 <g font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#e4e8e2"><text x="260" y="520">Clear architecture</text><text x="690" y="520">Human agency</text><text x="1080" y="520">Inspectable evidence</text></g>
-<g fill="#d7bd87"><circle cx="236" cy="515" r="3"/><circle cx="666" cy="515" r="3"/><circle cx="1056" cy="515" r="3"/></g>
+<g fill="#efcb7b"><circle cx="236" cy="515" r="3"/><circle cx="666" cy="515" r="3"/><circle cx="1056" cy="515" r="3"/></g>
 </svg>
