@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="t d">
+<title id="t">Instagram — @Amin_shahsaheb</title><desc id="d">A clickable Instagram profile card. OPEN INSTAGRAM.</desc>
+<defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#211721"/><stop offset="1" stop-color="#0b100e"/></linearGradient></defs>
+<rect x="2" y="2" width="756" height="206" rx="18" fill="url(#g)" stroke="#d982ad" stroke-opacity=".65" stroke-width="2"/>
+<path d="M20 3H740" stroke="#f0a8c8" stroke-width="4" stroke-linecap="round"/>
+<rect x="28" y="34" width="66" height="66" rx="18" fill="#8f5b79" fill-opacity=".28" stroke="#d982ad" stroke-opacity=".7"/>
+<circle cx="61" cy="67" r="19" fill="none" stroke="#f0a8c8" stroke-width="2"/>
+<path d="M49 67H73M61 55V79" stroke="#f0a8c8" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+<text x="122" y="63" fill="#f3f1e9" font-family="Georgia,serif" font-size="31">Instagram</text>
+<text x="123" y="96" fill="#f0a8c8" font-family="Arial,sans-serif" font-size="18">@Amin_shahsaheb</text>
+<path d="M122 122H716" stroke="#d982ad" stroke-opacity=".25"/>
+<text x="122" y="157" fill="#a8b5ad" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.5">SOCIAL · VISUAL UPDATES</text>
+<text x="716" y="177" text-anchor="end" fill="#f0a8c8" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing=".6">OPEN INSTAGRAM  ↗</text>
+
+</svg>
