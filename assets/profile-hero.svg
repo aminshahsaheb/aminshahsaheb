@@ -10,7 +10,7 @@
  <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
 </defs>
 <rect width="1800" height="720" rx="28" fill="url(#bg)"/>
-<rect width="1800" height="720" rx="28" fill="url(#atmo)" x="500" y="-20" width="1200" height="760"/>
+<ellipse cx="1320" cy="340" rx="560" ry="430" fill="url(#atmo)"/>
 <rect width="1800" height="720" rx="28" fill="url(#grid)"/>
 <rect x="28" y="28" width="1744" height="664" rx="18" fill="none" stroke="#d8e5dc" stroke-opacity=".12"/>
 <path d="M92 92H1708M92 628H1708" stroke="#d8e5dc" stroke-opacity=".12"/>
