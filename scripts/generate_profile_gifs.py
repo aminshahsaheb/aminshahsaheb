@@ -14,6 +14,16 @@ FRAMES = 30
 DURATION_MS = 100
 RENDER_SCALE = 2
 GIF_COLORS = 80
+MAX_GIF_BYTES = 400_000
+MAX_TOTAL_BYTES = 1_200_000
+PHASE_OFFSETS = {
+    "hero": 0.08,
+    "map": 0.00,
+    "process": 0.37,
+    "work": 0.62,
+    "signal": 0.23,
+    "connect": 0.78,
+}
 
 SOURCES = {
     "profile-hero.svg": ("profile-hero.gif", "hero"),
@@ -88,7 +98,7 @@ def add_sweep(layer: Image.Image, x: float, y0: int, y1: int,
 
 def overlay_for(kind: str, size, frame: int) -> Image.Image:
     width, height = size
-    phase = frame / FRAMES
+    phase = (frame / FRAMES + PHASE_OFFSETS[kind]) % 1.0
     scale = RENDER_SCALE
     sw, sh = width * scale, height * scale
     overlay = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
@@ -222,13 +232,44 @@ def make_gif(source_name: str, output_name: str, kind: str):
         optimize=True,
         disposal=1,
     )
+    # Read the encoded file back. This catches truncated GIFs and timing errors.
+    with Image.open(output) as check:
+        if check.n_frames != FRAMES:
+            raise RuntimeError(f"{output.name}: expected {FRAMES} frames, got {check.n_frames}")
+        if check.size != base.size:
+            raise RuntimeError(f"{output.name}: unexpected dimensions {check.size}")
+        if check.info.get("loop") != 0:
+            raise RuntimeError(f"{output.name}: GIF does not loop forever")
+        for frame_index in range(FRAMES):
+            check.seek(frame_index)
+            if check.info.get("duration") != DURATION_MS:
+                raise RuntimeError(
+                    f"{output.name}: frame {frame_index} has unexpected duration"
+                )
+
+    size_bytes = output.stat().st_size
+    if size_bytes > MAX_GIF_BYTES:
+        raise RuntimeError(
+            f"{output.name}: {size_bytes:,} bytes exceeds "
+            f"the {MAX_GIF_BYTES:,}-byte asset budget"
+        )
     print(
-        f"Created {output.relative_to(ROOT)} "
-        f"({output.stat().st_size:,} bytes, {FRAMES} frames, "
-        f"{FRAMES * DURATION_MS / 1000:.1f}s loop)"
+        f"Verified {output.relative_to(ROOT)} "
+        f"({size_bytes:,} bytes, {FRAMES} frames, "
+        f"{FRAMES * DURATION_MS / 1000:.1f}s seamless loop)"
     )
+    return size_bytes
 
 
 if __name__ == "__main__":
-    for source_name, (output_name, kind) in SOURCES.items():
+    sizes = [
         make_gif(source_name, output_name, kind)
+        for source_name, (output_name, kind) in SOURCES.items()
+    ]
+    total_bytes = sum(sizes)
+    if total_bytes > MAX_TOTAL_BYTES:
+        raise RuntimeError(
+            f"Total GIF size {total_bytes:,} bytes exceeds "
+            f"the {MAX_TOTAL_BYTES:,}-byte profile budget"
+        )
+    print(f"All {len(sizes)} GIFs verified. Total: {total_bytes:,} bytes.")
