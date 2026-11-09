@@ -10,6 +10,17 @@
 
 </div>
 
+<p align="center">
+  <a href="#about">ABOUT</a> &nbsp;·&nbsp;
+  <a href="#the-working-field">FIELDS</a> &nbsp;·&nbsp;
+  <a href="#selected-work">PROJECTS</a> &nbsp;·&nbsp;
+  <a href="#how-i-work">METHOD</a> &nbsp;·&nbsp;
+  <a href="#principles">PRINCIPLES</a> &nbsp;·&nbsp;
+  <a href="#connect">CONTACT</a>
+</p>
+
+## About
+
 I work across business and technology. I turn complex questions into useful systems, digital products and evidence-led decisions.
 
 My work follows one principle:
