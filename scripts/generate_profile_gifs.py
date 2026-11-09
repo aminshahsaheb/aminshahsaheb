@@ -7,8 +7,8 @@ from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
-FRAMES = 12
-DURATION_MS = 140
+FRAMES = 16
+DURATION_MS = 150
 
 # Keep the source SVGs. The GIFs are derived presentation files.
 SOURCES = {
@@ -19,7 +19,11 @@ SOURCES = {
     "profile-signal.svg": ("profile-signal.gif", "signal"),
 }
 
-MINT = (151, 247, 194)
+JADE = (151, 211, 176)
+BRASS = (215, 189, 135)
+BLUE = (151, 184, 211)
+COPPER = (190, 132, 111)
+PROJECT_ACCENTS = (JADE, BRASS, BLUE)
 
 
 def render_source(svg_path: Path) -> Image.Image:
@@ -27,17 +31,17 @@ def render_source(svg_path: Path) -> Image.Image:
     return Image.open(BytesIO(png)).convert("RGB")
 
 
-def pulse_ring(draw, x, y, radius, alpha, width=2):
-    color = (*MINT, max(0, min(255, int(alpha))))
-    draw.ellipse((x-radius, y-radius, x+radius, y+radius), outline=color, width=width)
+def pulse_ring(draw, x, y, radius, alpha, color=JADE, width=2):
+    rgba = (*color, max(0, min(255, int(alpha))))
+    draw.ellipse((x-radius, y-radius, x+radius, y+radius), outline=rgba, width=width)
 
 
-def add_sweep(layer: Image.Image, x: float, y0: int, y1: int, strength: int = 30):
+def add_sweep(layer: Image.Image, x: float, y0: int, y1: int, strength: int = 30, color=JADE):
     width, _ = layer.size
     band = Image.new("RGBA", layer.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(band)
     half = max(14, width // 55)
-    d.rectangle((int(x-half), y0, int(x+half), y1), fill=(*MINT, strength))
+    d.rectangle((int(x-half), y0, int(x+half), y1), fill=(*color, strength))
     band = band.filter(ImageFilter.GaussianBlur(radius=max(8, width // 90)))
     layer.alpha_composite(band)
 
@@ -50,52 +54,55 @@ def overlay_for(kind: str, size, frame: int) -> Image.Image:
 
     if kind == "hero":
         x = width * (0.48 + 0.43 * phase)
-        add_sweep(overlay, x, int(height * .12), int(height * .91), 38)
+        add_sweep(overlay, x, int(height * .12), int(height * .91), 25, BRASS)
         cx, cy = int(width * .733), int(height * .505)
-        pulse = 8 + 6 * (0.5 + 0.5 * math.sin(phase * math.tau))
-        pulse_ring(draw, cx, cy, pulse, 100, 2)
-        pulse_ring(draw, cx, cy, pulse + 11, 38, 1)
+        pulse = 8 + 5 * (0.5 + 0.5 * math.sin(phase * math.tau))
+        pulse_ring(draw, cx, cy, pulse, 90, JADE, 2)
+        pulse_ring(draw, cx, cy, pulse + 12, 34, BRASS, 1)
 
     elif kind == "map":
-        nodes = [(0.175, .59), (.5, .67), (.825, .59)]
+        # These coordinates match the three project emblems in the source SVG.
+        nodes = [(0.269, .461), (.584, .461), (.899, .461)]
         active = int((phase * 3) % 3)
         for index, (nx, ny) in enumerate(nodes):
             x, y = int(width * nx), int(height * ny)
             if index == active:
-                radius = 7 + int(6 * (0.5 + 0.5 * math.sin(phase * math.tau * 3)))
-                pulse_ring(draw, x, y, radius, 145, 2)
-                pulse_ring(draw, x, y, radius + 8, 55, 1)
-        x = int(width * (0.17 + .66 * phase))
-        y = int(height * (.59 + .08 * math.sin(phase * math.tau)))
-        draw.ellipse((x-3, y-3, x+3, y+3), fill=(*MINT, 190))
+                color = PROJECT_ACCENTS[index]
+                radius = 9 + int(5 * (0.5 + 0.5 * math.sin(phase * math.tau * 3)))
+                pulse_ring(draw, x, y, radius, 125, color, 2)
+                pulse_ring(draw, x, y, radius + 9, 42, color, 1)
 
     elif kind == "process":
         nodes = [.119, .306, .494, .681, .869]
         active = int((phase * 5) % 5)
+        process_accents = (JADE, BRASS, BLUE, JADE, COPPER)
         for index, nx in enumerate(nodes):
             x, y = int(width * nx), int(height * .45)
             if index == active:
-                radius = 21 + int(6 * (0.5 + 0.5 * math.sin(phase * math.tau * 5)))
-                pulse_ring(draw, x, y, radius, 145, 3)
+                radius = 20 + int(5 * (0.5 + 0.5 * math.sin(phase * math.tau * 5)))
+                pulse_ring(draw, x, y, radius, 125, process_accents[index], 2)
         x = int(width * (.119 + .75 * phase))
         y = int(height * .45)
-        draw.ellipse((x-3, y-3, x+3, y+3), fill=(*MINT, 210))
+        draw.ellipse((x-3, y-3, x+3, y+3), fill=(*BRASS, 205))
 
     elif kind == "work":
-        for index, center in enumerate((.185, .5, .815)):
-            local = (phase + index / 3) % 1
-            x = int(width * (center - .14 + .28 * local))
-            y = int(height * .32)
-            draw.line((x-12, y, x+12, y), fill=(*MINT, 175), width=2)
-            if index == int((phase * 3) % 3):
-                pulse_ring(draw, int(width * center), int(height * .58), 7, 75, 1)
+        # Pulse the actual project emblems, not the text or empty card space.
+        nodes = [(0.279, .481), (.593, .481), (.908, .481)]
+        active = int((phase * 3) % 3)
+        for index, (nx, ny) in enumerate(nodes):
+            if index == active:
+                x, y = int(width * nx), int(height * ny)
+                color = PROJECT_ACCENTS[index]
+                radius = 9 + int(4 * (0.5 + 0.5 * math.sin(phase * math.tau * 3)))
+                pulse_ring(draw, x, y, radius, 120, color, 2)
+                pulse_ring(draw, x, y, radius + 8, 38, color, 1)
 
     elif kind == "signal":
         x = int(width * (.42 + .45 * phase))
         y = int(height * (.66 - .28 * phase + .025 * math.sin(phase * math.tau)))
-        pulse_ring(draw, x, y, 7 + int(3 * math.sin(phase * math.tau) ** 2), 150, 2)
-        draw.ellipse((x-3, y-3, x+3, y+3), fill=(*MINT, 220))
-        add_sweep(overlay, int(width * (.35 + .55 * phase)), int(height * .28), int(height * .78), 22)
+        pulse_ring(draw, x, y, 7 + int(3 * math.sin(phase * math.tau) ** 2), 140, BLUE, 2)
+        draw.ellipse((x-3, y-3, x+3, y+3), fill=(*BRASS, 220))
+        add_sweep(overlay, int(width * (.35 + .55 * phase)), int(height * .28), int(height * .78), 18, BLUE)
 
     return overlay
 
