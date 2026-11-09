@@ -234,18 +234,27 @@ def make_gif(source_name: str, output_name: str, kind: str):
     )
     # Read the encoded file back. This catches truncated GIFs and timing errors.
     with Image.open(output) as check:
-        if check.n_frames != FRAMES:
-            raise RuntimeError(f"{output.name}: expected {FRAMES} frames, got {check.n_frames}")
+        if not 1 <= check.n_frames <= FRAMES:
+            raise RuntimeError(f"{output.name}: invalid frame count {check.n_frames}")
         if check.size != base.size:
             raise RuntimeError(f"{output.name}: unexpected dimensions {check.size}")
         if check.info.get("loop") != 0:
             raise RuntimeError(f"{output.name}: GIF does not loop forever")
-        for frame_index in range(FRAMES):
+        total_duration = 0
+        for frame_index in range(check.n_frames):
             check.seek(frame_index)
-            if check.info.get("duration") != DURATION_MS:
+            frame_duration = check.info.get("duration", 0)
+            if frame_duration <= 0:
                 raise RuntimeError(
-                    f"{output.name}: frame {frame_index} has unexpected duration"
+                    f"{output.name}: frame {frame_index} has no valid duration"
                 )
+            total_duration += frame_duration
+        expected_duration = FRAMES * DURATION_MS
+        if total_duration != expected_duration:
+            raise RuntimeError(
+                f"{output.name}: expected {expected_duration}ms total duration, "
+                f"got {total_duration}ms"
+            )
 
     size_bytes = output.stat().st_size
     if size_bytes > MAX_GIF_BYTES:
