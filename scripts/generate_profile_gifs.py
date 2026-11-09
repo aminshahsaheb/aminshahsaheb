@@ -195,6 +195,32 @@ def overlay_for(kind: str, size, frame: int) -> Image.Image:
     return overlay.resize((width, height), Image.Resampling.LANCZOS)
 
 
+def build_shared_palette(frames: list[Image.Image]) -> Image.Image:
+    """Build one palette from full-resolution frames and preserve key brand colors."""
+    frame_width, frame_height = frames[0].size
+    anchors = (
+        JADE, BRASS, BLUE, COPPER,
+        *CONTACT_ACCENTS,
+        (141, 200, 168), (215, 189, 135), (229, 213, 168),
+        (241, 240, 233), (216, 229, 220), (158, 170, 162),
+    )
+    swatch_width = 24
+    sheet = Image.new(
+        "RGB",
+        (frame_width * len(frames) + swatch_width * len(anchors), frame_height),
+    )
+    for index, frame in enumerate(frames):
+        sheet.paste(frame, (index * frame_width, 0))
+
+    draw = ImageDraw.Draw(sheet)
+    x = frame_width * len(frames)
+    for color in anchors:
+        draw.rectangle((x, 0, x + swatch_width - 1, frame_height - 1), fill=color)
+        x += swatch_width
+
+    return sheet.quantize(colors=GIF_COLORS, method=Image.Quantize.MEDIANCUT)
+
+
 def make_gif(source_name: str, output_name: str, kind: str):
     source = ASSETS / source_name
     output = ASSETS / output_name
@@ -206,14 +232,11 @@ def make_gif(source_name: str, output_name: str, kind: str):
         frame.alpha_composite(overlay_for(kind, frame.size, index))
         rgb_frames.append(frame.convert("RGB"))
 
-    # Quantize each full-resolution frame independently. The old shared palette
-    # sampled 192px thumbnails and discarded fine, saturated colors from the artwork.
+    # Build the shared palette from every full-resolution pixel. Include exact
+    # brand-color swatches so thin, saturated details survive palette reduction.
+    palette = build_shared_palette(rgb_frames)
     frames = [
-        frame.quantize(
-            colors=GIF_COLORS,
-            method=Image.Quantize.MEDIANCUT,
-            dither=Image.Dither.NONE,
-        )
+        frame.quantize(palette=palette, dither=Image.Dither.NONE)
         for frame in rgb_frames
     ]
 
