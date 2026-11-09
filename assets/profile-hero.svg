@@ -3,49 +3,49 @@
 <desc id="desc">A restrained architectural identity banner. Persian eight-fold geometry, an open arch, fine construction lines and three connected system nodes.</desc>
 <defs>
  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090d0c"/><stop offset=".52" stop-color="#101713"/><stop offset="1" stop-color="#080b0a"/></linearGradient>
- <radialGradient id="atmo"><stop stop-color="#73d6a0" stop-opacity=".12"/><stop offset="1" stop-color="#73d6a0" stop-opacity="0"/></radialGradient>
- <linearGradient id="brass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#efcb7b"/><stop offset=".5" stop-color="#9c8359"/><stop offset="1" stop-color="#e5d3a8"/></linearGradient>
- <linearGradient id="jade" x1="0" x2="1"><stop stop-color="#73d6a0" stop-opacity="0"/><stop offset=".5" stop-color="#b5ebc9" stop-opacity=".75"/><stop offset="1" stop-color="#73d6a0" stop-opacity="0"/></linearGradient>
+ <radialGradient id="atmo"><stop stop-color="#8dc8a8" stop-opacity=".12"/><stop offset="1" stop-color="#8dc8a8" stop-opacity="0"/></radialGradient>
+ <linearGradient id="brass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d7bd87"/><stop offset=".5" stop-color="#9c8359"/><stop offset="1" stop-color="#e5d3a8"/></linearGradient>
+ <linearGradient id="jade" x1="0" x2="1"><stop stop-color="#8dc8a8" stop-opacity="0"/><stop offset=".5" stop-color="#a9d7bb" stop-opacity=".75"/><stop offset="1" stop-color="#8dc8a8" stop-opacity="0"/></linearGradient>
  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#d8e5dc" stroke-opacity=".035"/></pattern>
  <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
 </defs>
 <rect width="1800" height="720" rx="28" fill="url(#bg)"/>
 <ellipse cx="1320" cy="340" rx="560" ry="430" fill="url(#atmo)"/>
 <rect width="1800" height="720" rx="28" fill="url(#grid)"/>
-<rect x="28" y="28" width="1744" height="664" rx="18" fill="none" stroke="#d8e5dc" stroke-opacity=".24"/>
-<path d="M92 92H1708M92 628H1708" stroke="#d8e5dc" stroke-opacity=".24"/>
-<g fill="#a9bdb0" font-family="ui-monospace,Menlo,monospace" font-size="12" letter-spacing="3">
+<rect x="28" y="28" width="1744" height="664" rx="18" fill="none" stroke="#d8e5dc" stroke-opacity=".12"/>
+<path d="M92 92H1708M92 628H1708" stroke="#d8e5dc" stroke-opacity=".12"/>
+<g fill="#819087" font-family="ui-monospace,Menlo,monospace" font-size="12" letter-spacing="3">
  <text x="104" y="74">INDEPENDENT BUILDER / SYSTEMS &amp; PRODUCTS</text>
  <text x="1696" y="74" text-anchor="end">EST. IN CURIOSITY · GROUNDED IN EVIDENCE</text>
  <text x="104" y="666">BUSINESS</text><text x="246" y="666">TECHNOLOGY</text><text x="430" y="666">APPLIED AI</text><text x="578" y="666">MARKET RESEARCH</text>
  <text x="1696" y="666" text-anchor="end">BUILD / CONNECT / VERIFY</text>
 </g>
 <g transform="translate(104 202)">
- <text x="0" y="0" fill="#efcb7b" font-family="ui-monospace,Menlo,monospace" font-size="13" letter-spacing="4">A PERSONAL WORKING PRINCIPLE</text>
+ <text x="0" y="0" fill="#d7bd87" font-family="ui-monospace,Menlo,monospace" font-size="13" letter-spacing="4">A PERSONAL WORKING PRINCIPLE</text>
  <path d="M0 28H520" stroke="url(#brass)" stroke-opacity=".65"/>
  <text x="0" y="112" fill="#f1f0e9" font-family="Georgia,Times New Roman,serif" font-size="66" letter-spacing="-1">Build with intent.</text>
  <text x="0" y="190" fill="#f1f0e9" font-family="Georgia,Times New Roman,serif" font-size="66" letter-spacing="-1">Verify with care.</text>
- <text x="2" y="252" fill="#d3e0d8" font-family="Arial,Helvetica,sans-serif" font-size="21">Turning complex questions into useful systems,</text>
- <text x="2" y="286" fill="#d3e0d8" font-family="Arial,Helvetica,sans-serif" font-size="21">digital products and evidence-led decisions.</text>
- <path d="M0 338H430" stroke="#d8e5dc" stroke-opacity=".28"/>
- <text x="2" y="372" fill="#adc1b3" font-family="ui-monospace,Menlo,monospace" font-size="12" letter-spacing="2">STRATEGY → ARCHITECTURE → PRODUCT → EVIDENCE</text>
+ <text x="2" y="252" fill="#b7c4bb" font-family="Arial,Helvetica,sans-serif" font-size="21">Turning complex questions into useful systems,</text>
+ <text x="2" y="286" fill="#b7c4bb" font-family="Arial,Helvetica,sans-serif" font-size="21">digital products and evidence-led decisions.</text>
+ <path d="M0 338H430" stroke="#d8e5dc" stroke-opacity=".16"/>
+ <text x="2" y="372" fill="#84958a" font-family="ui-monospace,Menlo,monospace" font-size="12" letter-spacing="2">STRATEGY → ARCHITECTURE → PRODUCT → EVIDENCE</text>
 </g>
 <g transform="translate(1320 364)">
- <circle r="270" fill="#73d6a0" opacity=".045" filter="url(#blur)"/>
- <path d="M-300 270V-52C-300-224-166-292 0-292S300-224 300-52V270" fill="none" stroke="#efcb7b" stroke-opacity=".25" stroke-width="1.5"/>
- <path d="M-254 270V-46C-254-190-140-246 0-246S254-190 254-46V270" fill="none" stroke="#efcb7b" stroke-opacity=".24"/>
- <circle r="194" fill="none" stroke="#b8d6c3" stroke-opacity=".24"/>
- <circle r="154" fill="none" stroke="#b8d6c3" stroke-opacity=".24" stroke-dasharray="2 10"/>
+ <circle r="270" fill="#8dc8a8" opacity=".045" filter="url(#blur)"/>
+ <path d="M-300 270V-52C-300-224-166-292 0-292S300-224 300-52V270" fill="none" stroke="#d7bd87" stroke-opacity=".25" stroke-width="1.5"/>
+ <path d="M-254 270V-46C-254-190-140-246 0-246S254-190 254-46V270" fill="none" stroke="#d7bd87" stroke-opacity=".18"/>
+ <circle r="194" fill="none" stroke="#b8d6c3" stroke-opacity=".18"/>
+ <circle r="154" fill="none" stroke="#b8d6c3" stroke-opacity=".12" stroke-dasharray="2 10"/>
  <path d="M0-194L46-46L194 0L46 46L0 194L-46 46L-194 0L-46-46Z" fill="none" stroke="url(#brass)" stroke-width="2"/>
- <path d="M0-137L137 0L0 137L-137 0Z" fill="none" stroke="#b5ebc9" stroke-opacity=".45" stroke-width="1.5"/>
- <path d="M-97-97L97 97M97-97L-97 97M0-194V194M-194 0H194" stroke="#b5ebc9" stroke-opacity=".26"/>
- <circle r="48" fill="#0d1712" stroke="#efcb7b" stroke-opacity=".55"/>
- <circle r="27" fill="none" stroke="#b5ebc9" stroke-opacity=".7"/>
+ <path d="M0-137L137 0L0 137L-137 0Z" fill="none" stroke="#a9d7bb" stroke-opacity=".45" stroke-width="1.5"/>
+ <path d="M-97-97L97 97M97-97L-97 97M0-194V194M-194 0H194" stroke="#a9d7bb" stroke-opacity=".2"/>
+ <circle r="48" fill="#0d1712" stroke="#d7bd87" stroke-opacity=".55"/>
+ <circle r="27" fill="none" stroke="#a9d7bb" stroke-opacity=".7"/>
  <circle r="5" fill="#e7d7b0"/>
- <g fill="#efcb7b"><circle cx="0" cy="-194" r="4"/><circle cx="194" cy="0" r="4"/><circle cx="0" cy="194" r="4"/><circle cx="-194" cy="0" r="4"/></g>
- <g stroke="#b5ebc9" stroke-opacity=".45" fill="none"><path d="M-194 0C-270-30-280-110-254-172M194 0C270 30 280 110 254 172"/></g>
- <g fill="#efcb7b"><circle cx="-254" cy="-172" r="4"/><circle cx="254" cy="172" r="4"/></g>
- <g font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#b6cabc" letter-spacing="2">
+ <g fill="#d7bd87"><circle cx="0" cy="-194" r="4"/><circle cx="194" cy="0" r="4"/><circle cx="0" cy="194" r="4"/><circle cx="-194" cy="0" r="4"/></g>
+ <g stroke="#a9d7bb" stroke-opacity=".45" fill="none"><path d="M-194 0C-270-30-280-110-254-172M194 0C270 30 280 110 254 172"/></g>
+ <g fill="#d7bd87"><circle cx="-254" cy="-172" r="4"/><circle cx="254" cy="172" r="4"/></g>
+ <g font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#8ea297" letter-spacing="2">
   <text x="0" y="-224" text-anchor="middle">STRUCTURE</text><text x="224" y="4">SYSTEM</text><text x="0" y="232" text-anchor="middle">EVIDENCE</text><text x="-224" y="4" text-anchor="end">PURPOSE</text>
  </g>
 </g>
