@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="t d">
+<title id="t">Selected repositories</title><desc id="d">Open the public repositories by Amin Shahsaheb.</desc>
+<rect x="2" y="2" width="756" height="206" rx="18" fill="#101820" stroke="#83a9c8" stroke-opacity=".65" stroke-width="2"/>
+<path d="M20 3H740" stroke="#b5d1e6" stroke-width="4" stroke-linecap="round"/>
+<rect x="28" y="34" width="66" height="66" rx="18" fill="#29455c" stroke="#83a9c8"/>
+<path d="M45 52L61 44L77 52V72L61 82L45 72Z" fill="none" stroke="#b5d1e6" stroke-width="2"/>
+<path d="M45 52L61 62L77 52M61 62V82" fill="none" stroke="#b5d1e6" stroke-width="2"/>
+<text x="122" y="63" fill="#f3f1e9" font-family="Georgia,serif" font-size="31">Selected repositories</text>
+<text x="123" y="96" fill="#b5d1e6" font-family="Arial,sans-serif" font-size="18">Explore the public project work</text>
+<path d="M122 122H716" stroke="#83a9c8" stroke-opacity=".25"/>
+<text x="122" y="157" fill="#a8b5ad" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.5">GITHUB · SOURCE · DOCUMENTATION</text>
+<text x="716" y="177" text-anchor="end" fill="#b5d1e6" font-family="Arial,sans-serif" font-size="16" font-weight="700">VIEW REPOSITORIES ↗</text>
+</svg>
