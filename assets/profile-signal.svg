@@ -1,9 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" role="img" aria-labelledby="t d">
-<title id="t">Design language</title><desc id="d">Persian geometric proportion translated into grids, radial construction, nodes and signal paths.</desc>
-<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#050907"/><stop offset="1" stop-color="#0b1711"/></linearGradient><pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#b5f5d1" stroke-opacity=".045"/></pattern></defs>
-<rect width="1600" height="420" rx="24" fill="url(#bg)"/><rect width="1600" height="420" rx="24" fill="url(#g)"/><rect x="24" y="24" width="1552" height="372" rx="18" fill="none" stroke="#b9f8d7" stroke-opacity=".16"/>
-<g font-family="monospace" fill="#789989" font-size="12" letter-spacing="3"><text x="62" y="70">DESIGN LANGUAGE / FORM FOLLOWS STRUCTURE</text><text x="1538" y="70" text-anchor="end">PERSIAN GEOMETRY × COMPUTATIONAL ORDER</text></g>
-<g transform="translate(330 235)" fill="none" stroke="#a8ffd0"><circle r="126" stroke-opacity=".2"/><circle r="92" stroke-opacity=".4"/><circle r="58" stroke-opacity=".25"/><path d="M0-126L34-34L126 0L34 34L0 126L-34 34L-126 0L-34-34Z" stroke-opacity=".7" stroke-width="2"/><path d="M-89-89L0 0L89 89M89-89L0 0L-89 89M0-126V126M-126 0H126" stroke-opacity=".25"/><circle r="8" fill="#caffdf" stroke="none"/></g>
-<g transform="translate(650 130)" stroke="#8be9b7" stroke-opacity=".55" fill="none"><path d="M0 0H760M0 62H760M0 124H760M0 186H760"/><path d="M0 0V186M95 0V186M190 0V186M285 0V186M380 0V186M475 0V186M570 0V186M665 0V186M760 0V186" stroke-opacity=".2"/><path d="M0 155L90 143L180 152L270 104L360 119L450 74L540 88L630 36L760 48" stroke="#caffdf" stroke-width="3"/></g>
-<g font-family="Arial,sans-serif"><text x="650" y="360" fill="#effff5" font-size="22" font-weight="700">Proportion · Grid · Node · State · Signal · Trace</text><text x="650" y="388" fill="#8eb6a0" font-size="14">A visual system should clarify relationships, not compete with them.</text></g>
+<title id="t">Visual language — Persian geometry and computational structure</title><desc id="d">An eight-fold Persian geometric construction beside a precise grid and a measured signal trace.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0a0e0c"/><stop offset="1" stop-color="#121a15"/></linearGradient><linearGradient id="signal" x2="1"><stop stop-color="#83a9c8" stop-opacity=".15"/><stop offset=".5" stop-color="#d7bd87"/><stop offset="1" stop-color="#8dc8a8" stop-opacity=".15"/></linearGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#d8e5dc" stroke-opacity=".055"/></pattern></defs>
+<rect width="1600" height="420" rx="22" fill="url(#bg)"/><rect x="24" y="24" width="1552" height="372" rx="14" fill="none" stroke="#d8e5dc" stroke-opacity=".13"/>
+<g font-family="ui-monospace,Menlo,monospace" fill="#8d9b91" font-size="11" letter-spacing="2.5"><text x="62" y="68">VISUAL LANGUAGE / FORM FOLLOWS STRUCTURE</text><text x="1538" y="68" text-anchor="end">PERSIAN PROPORTION × COMPUTATIONAL ORDER</text></g>
+<g transform="translate(300 226)" fill="none">
+ <circle r="142" stroke="#d7bd87" stroke-opacity=".3"/><circle r="108" stroke="#8dc8a8" stroke-opacity=".35"/><circle r="72" stroke="#8dc8a8" stroke-opacity=".2"/>
+ <path d="M0-142L38-38L142 0L38 38L0 142L-38 38L-142 0L-38-38Z" stroke="#d7bd87" stroke-width="2"/>
+ <path d="M-100-100L0 0L100 100M100-100L0 0L-100 100M0-142V142M-142 0H142" stroke="#a9d7bb" stroke-opacity=".38"/>
+ <path d="M-72-72L72 72M72-72L-72 72" stroke="#a9d7bb" stroke-opacity=".22"/>
+ <circle r="8" fill="#e3d3aa" stroke="none"/>
+ <circle cx="0" cy="-142" r="4" fill="#d7bd87" stroke="none"/><circle cx="142" cy="0" r="4" fill="#d7bd87" stroke="none"/><circle cx="0" cy="142" r="4" fill="#d7bd87" stroke="none"/><circle cx="-142" cy="0" r="4" fill="#d7bd87" stroke="none"/>
+</g>
+<g transform="translate(570 120)">
+ <rect width="940" height="220" rx="8" fill="url(#grid)" stroke="#d8e5dc" stroke-opacity=".13"/>
+ <g stroke="#d8e5dc" stroke-opacity=".16"><path d="M0 55H940M0 110H940M0 165H940M117 0V220M234 0V220M351 0V220M468 0V220M585 0V220M702 0V220M819 0V220"/></g>
+ <path d="M28 170L118 156L208 166L298 121L388 138L478 88L568 108L658 60L748 78L838 35L912 48" fill="none" stroke="url(#signal)" stroke-width="3"/>
+ <g fill="#d7bd87"><circle cx="298" cy="121" r="4"/><circle cx="478" cy="88" r="4"/><circle cx="658" cy="60" r="4"/><circle cx="838" cy="35" r="4"/></g>
+ <g font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="1.5" fill="#82948a"><text x="20" y="245">PROPORTION</text><text x="210" y="245">GRID</text><text x="400" y="245">NODE</text><text x="590" y="245">STATE</text><text x="780" y="245">SIGNAL</text><text x="930" y="245" text-anchor="end">TRACE</text></g>
+</g>
+<text x="570" y="382" fill="#c3cec6" font-family="Arial,Helvetica,sans-serif" font-size="16">Visual form should make relationships easier to understand — never compete with them.</text>
 </svg>
