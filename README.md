@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/profile-hero.svg" alt="Amin Shahsaheb — Build, Connect, Verify" width="100%">
+<img src="assets/profile-hero.gif" alt="Amin Shahsaheb — Build, Connect, Verify" width="100%">
 
 </div>
 
@@ -20,7 +20,7 @@ My work moves across different fields, but follows one discipline:
 
 ## The work at a glance
 
-<img src="assets/profile-system-map.svg" alt="A map of the three main project areas and their shared engineering principles" width="100%">
+<img src="assets/profile-system-map.gif" alt="An animated map of the three main project areas and their shared engineering principles" width="100%">
 
 I build in three distinct areas. Each project has its own purpose, boundaries and evidence standard.
 
@@ -34,7 +34,7 @@ I build in three distinct areas. Each project has its own purpose, boundaries an
 
 ## Selected work
 
-<img src="assets/profile-work-grid.svg" alt="Three project cards for Fanus, MarketFa and BTC Signal Lab" width="100%">
+<img src="assets/profile-work-grid.gif" alt="Animated project cards for Fanus, MarketFa and BTC Signal Lab" width="100%">
 
 ### 01 — Fānus · Human–AI continuity and verification
 
@@ -81,7 +81,7 @@ A statistical result or a passing engineering check is not proof of profitabilit
 
 ## How I work
 
-<img src="assets/profile-operating-system.svg" alt="Five stages: understand, frame, design, build and verify" width="100%">
+<img src="assets/profile-operating-system.gif" alt="Animated five-stage process: understand, frame, design, build and verify" width="100%">
 
 I use a repeatable process:
 
@@ -97,7 +97,7 @@ A finished interface is not proof that the underlying system works. A passing te
 
 ## Design language
 
-<img src="assets/profile-signal.svg" alt="A design language combining Persian geometry, system grids and measured signals" width="100%">
+<img src="assets/profile-signal.gif" alt="Animated design language combining Persian geometry, system grids and measured signals" width="100%">
 
 I am drawn to the meeting point of **Persian geometric form and computational structure**: proportion, symmetry, radial patterns, grids, nodes and traces.
 
