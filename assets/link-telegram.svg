@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="t d">
+<title id="t">Telegram — @Kingsaheb</title><desc id="d">A clickable Telegram profile card. OPEN TELEGRAM.</desc>
+<defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#102130"/><stop offset="1" stop-color="#0b100e"/></linearGradient></defs>
+<rect x="2" y="2" width="756" height="206" rx="18" fill="url(#g)" stroke="#69a9d3" stroke-opacity=".65" stroke-width="2"/>
+<path d="M20 3H740" stroke="#add8f0" stroke-width="4" stroke-linecap="round"/>
+<rect x="28" y="34" width="66" height="66" rx="18" fill="#386e91" fill-opacity=".28" stroke="#69a9d3" stroke-opacity=".7"/>
+<circle cx="61" cy="67" r="19" fill="none" stroke="#add8f0" stroke-width="2"/>
+<path d="M49 67H73M61 55V79" stroke="#add8f0" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+<text x="122" y="63" fill="#f3f1e9" font-family="Georgia,serif" font-size="31">Telegram</text>
+<text x="123" y="96" fill="#add8f0" font-family="Arial,sans-serif" font-size="18">@Kingsaheb</text>
+<path d="M122 122H716" stroke="#69a9d3" stroke-opacity=".25"/>
+<text x="122" y="157" fill="#a8b5ad" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.5">DIRECT · QUICK CONTACT</text>
+<text x="716" y="177" text-anchor="end" fill="#add8f0" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing=".6">OPEN TELEGRAM  ↗</text>
+
+</svg>
