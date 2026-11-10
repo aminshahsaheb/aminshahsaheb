@@ -56,7 +56,7 @@ I work in three areas. Each has a different purpose and a clear boundary.
 
 ## Selected work
 
-<img src="assets/profile-work-grid.gif?v=a27928c" alt="Three project panels for Fānus, MarketFa and BTC Signal Lab" width="100%">
+<img src="assets/profile-work-grid.gif?v=a27928c" alt="Visual overview of Fānus, MarketFa and BTC Signal Lab. Use the linked project cards below to open each project." width="100%">
 
 ### 01 — Fānus · Human–AI systems
 
@@ -136,7 +136,7 @@ The goal is not decoration. The visual system should make the underlying relatio
 
 A clear route for each kind of conversation. Choose the channel that fits your message.
 
-<img src="assets/profile-connect.gif?v=a27928c" alt="Four contact cards for Instagram, WhatsApp, Telegram and the business profile. Each card uses its own brand-inspired color." width="100%">
+<img src="assets/profile-connect.gif?v=a27928c" alt="Visual overview of Instagram, WhatsApp, Telegram and the digital business card. Use the linked contact cards below to open each channel." width="100%">
 
 <table>
 <tr>
